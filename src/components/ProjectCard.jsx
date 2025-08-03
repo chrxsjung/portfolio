@@ -7,9 +7,10 @@ export default function ProjectCard({
   image,
   liveUrl,
   githubUrl,
+  descriptionClass,
 }) {
   return (
-    <div className="flex flex-col items-center text-white px-6 mb-16 max-w-md">
+    <div className="flex flex-col items-center text-white mb-16 max-w-md">
       <img
         src={image}
         alt={`${title} preview`}
@@ -20,7 +21,9 @@ export default function ProjectCard({
         {title}
       </h1>
 
-      <p className="text-lg mt-6 text-center">{description}</p>
+      <p className={`text-lg mt-6 text-center ${descriptionClass}`}>
+        {description}
+      </p>
       <p className="text-lg mt-4 text-center">{techStack}</p>
 
       {/* buttons */}
