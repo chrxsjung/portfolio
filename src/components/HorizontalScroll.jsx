@@ -6,11 +6,11 @@ export default function HorizontalScroll() {
   return (
     <ScrollContainer
       hideScrollbars={false}
-      className="flex flex-row gap-12 mt-12 overflow-x-auto whitespace-nowrap pr-4 cursor-grab active:cursor-grabbing "
+      className="flex flex-row gap-12 mt-10 overflow-x-auto whitespace-nowrap pr-4 cursor-grab active:cursor-grabbing "
     >
       <ProjectCard
         image="/images/spotify.jpg"
-        status="working on improvements"
+        status="working on new features (AI powered)"
         liveUrl="https://spotify-stats-v2-inky.vercel.app/"
         githubUrl="https://github.com/chrxsjung/spotify-stats-v2"
         title="Spotify Stats"
@@ -19,7 +19,7 @@ export default function HorizontalScroll() {
       />
       <ProjectCard
         image="/images/epl.jpg"
-        status="working on improvements"
+        status="working on fixing goalkeeper stats and more..."
         liveUrl="https://soccer-stats-taupe.vercel.app/"
         githubUrl="https://github.com/chrxsjung/soccer-stats"
         title="EPL Stats"
@@ -32,7 +32,7 @@ export default function HorizontalScroll() {
         status="working on improvements"
         title="Portfolio"
         githubUrl="https://github.com/chrxsjung/portfolio"
-        description="My portfolio website! It's good practice for me to apply new front end related skills to this website. "
+        description="My portfolio website! I'm going to continue updating it with new projects and experiences. And make it pretty:) "
         techStack={`JavaScript, React, Next.js\nand Tailwind CSS`}
         hideGithub={false}
         hideLive={true}

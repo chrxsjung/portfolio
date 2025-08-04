@@ -1,59 +1,57 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Linkedin, Github, Mail } from "lucide-react";
-import { ArrowRight, ArrowBigRight } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowBigRight,
+  ArrowBigDown,
+  ArrowDown,
+} from "lucide-react";
 import HorizontalScroll from "@/components/HorizontalScroll";
+import HorizontalScrollSkills from "@/components/HorizontalScrollSkills";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1 flex justify-start mb-12 w-full px-[5%] md:px-[8%] lg:px-[12%]">
-        <div className="flex flex-col text-left text-gray-200 p-6 md:p-12 w-full md:max-w-[90%] lg:max-w-[80%]">
-          <h1 className="font-bold text-4xl sm:text-6xl typing text-yellow-400">
+      <main className="flex-1 flex justify-start mb-12 w-full px-[5%] md:px-[8%] lg:px-[12%] ">
+        <div className="flex flex-col text-left text-gray-200 p-6 md:p-12 w-full md:max-w-[90%] lg:max-w-[80%] container-everything">
+          <h1 className="font-bold text-4xl sm:text-6xl typing text-yellow-400 nameblock">
             Hi, I'm Chris.
           </h1>
 
           <p className="text-xl mt-7">
-            I'm a junior studying computer science at the{" "}
-            <span className="text-blue-500">University at Buffalo</span>. I'm
-            passionate about all things web development and always looking for
-            opportunities to learn and grow as a developer.
+            I'm a junior majoring in computer science at the{" "}
+            <span className="text-blue-500">University at Buffalo</span>, with a
+            strong interest in full-stack web development. I'm always looking
+            for new ways to learn, build, and grow as a developer.
           </p>
+
           <p className="text-xl mt-5">
             I'm currently seeking a software engineering internship for{" "}
             <span className="text-red-400 font-semibold">Summer 2026</span>. If
-            you'd like to connect, or just want to chat, feel free to{" "}
-            <a href="#contact" className="underline text-blue-500">
-              contact me
-            </a>
-            . I'd love to hear from you!
+            you'd like to connect, or just want to chat, feel free to contact
+            me. I'd love to hear from you!
           </p>
 
           <p className="text-xl mt-5">
-            I use <span className="text-yellow-400">JavaScript</span>,{" "}
+            I build my projects using{" "}
+            <span className="text-yellow-400">JavaScript</span>,{" "}
+            <span className="text-blue-500">TypeScript</span>,{" "}
             <span className="text-sky-400">React</span>,{" "}
-            <span className="bg-white text-black font-semibold px-1 rounded">
+            <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
               Next.js
             </span>
-            , <span className="text-cyan-400">Tailwind CSS</span>, and{" "}
-            <span className="text-emerald-500">Supabase (PostgreSQL)</span> to
-            build my projects. I also used this same tech stack during my
-            internship at <span className="text-orange-500">Barbarian</span>. On
-            top of that, I'm familiar with{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-400">
-              Pyt
-            </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-500">
-              hon
-            </span>
-            , <span className="text-green-500">Java</span>, and{" "}
-            <span className="text-blue-500">C</span>.
+            , and <span className="text-cyan-400">Tailwind CSS</span>. Recently,
+            I’ve been focused on expanding my backend skills with{" "}
+            <span className="text-green-500">MongoDB</span>,{" "}
+            <span className="text-orange-400">AWS</span>, and{" "}
+            <span className="text-sky-400">Docker</span>.
           </p>
 
           <p className="text-xl mt-5">
-            I'm constantly learning by building projects that I'm passionate
-            about and sharing them with others.
+            I believe in learning by doing. I build things I’m excited and
+            passionate about and share them with others.
           </p>
 
           <p className="text-xl mt-5">
@@ -63,7 +61,6 @@ export default function Home() {
             <span className="text-cyan-400">Fortnite</span>, and{" "}
             <span className="text-green-500">FIFA</span>.
           </p>
-
           <div className="flex flex-row gap-4 justify-start mt-8 text-gray-100">
             <a
               href="https://www.linkedin.com/in/chrxsjung/"
@@ -91,6 +88,18 @@ export default function Home() {
             </a>
           </div>
 
+          <div className="flex flex-row gap-2 justify-start items-center mt-8 text-gray-100">
+            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+
+            <p className="text-xl">
+              Scroll to the right to see my tech skills and what I'm learning.
+            </p>
+          </div>
+
+          <HorizontalScrollSkills />
+
           <div className="flex flex-col justify-start text-left text-gray-300 space-y-4 mt-10">
             <p className="font-bold text-4xl sm:text-6xl mt-8 text-yellow-400">
               Want to see what I’ve worked on?{" "}
@@ -99,9 +108,9 @@ export default function Home() {
               Scroll down and browse through my recent internship and projects.
             </p>
             <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
-              <ArrowBigRight className="w-12 h-12 text-blue-500 animate-bounce mt-4 rotate-90" />
-              <ArrowBigRight className="w-12 h-12 text-blue-500 animate-bounce mt-4 rotate-90" />
-              <ArrowBigRight className="w-12 h-12 text-blue-500 animate-bounce mt-4 rotate-90" />
+              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
+              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />{" "}
+              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
             </div>
           </div>
 
@@ -136,10 +145,10 @@ export default function Home() {
 
           <p className="text-xl mt-5">
             🔒 I also developed and shipped 10+ front-end pages for an internal
-            tool to help streamline work across the company. I used{" "}
+            AI powered tool to help streamline work across the company. I used{" "}
             <span className="text-blue-500 font-semibold">TypeScript</span>,{" "}
             <span className="text-sky-400 font-semibold">React</span>,{" "}
-            <span className="bg-white text-black font-semibold px-1 rounded">
+            <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
               Next.js
             </span>
             , and{" "}
@@ -164,23 +173,14 @@ export default function Home() {
             Projects
           </h1>
           <p className="text-xl mt-7">
-            I learn best by building. I primarily use{" "}
-            <span className="text-yellow-400">JavaScript</span>,{" "}
-            <span className="text-sky-400">React</span>,{" "}
-            <span className="bg-white text-black font-semibold px-1 rounded">
-              Next.js
-            </span>
-            , <span className="text-cyan-400">Tailwind CSS</span>, and{" "}
-            <span className="text-emerald-500">Supabase (PostgreSQL)</span> to
-            build my projects and host them on{" "}
-            <span className="bg-white text-black font-semibold px-1 rounded">
+            I learn best by building. My projects are hosted on{" "}
+            <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
               Vercel
-            </span>
-            . I'm expanding my backend skills by diving deeper into{" "}
-            <span className="text-green-500">Node.js</span>,{" "}
-            <span className="text-yellow-500">Express</span>, and{" "}
-            <span className="text-green-500">MongoDB</span>.
+            </span>{" "}
+            and reflect both the tools I’m confident with and the new ones I’m
+            exploring.
           </p>
+
           <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
             <ArrowRight className="w-12 h-12 text-blue-500" />
             <ArrowRight className="w-12 h-12 text-blue-500" />
@@ -228,23 +228,23 @@ export default function Home() {
             (you're welcome), and{" "}
             <span className="text-pink-500">
               <a
-                href="https://www.youtube.com/watch?v=XShaIZs7J7M"
+                href="https://www.youtube.com/watch?v=iRNxBLK_PVk"
                 className="underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Really Like You
+                Alone (Feat. SOLE, Dvwn)
               </a>
             </span>{" "}
             by{" "}
             <span className="text-pink-500">
               <a
-                href="https://open.spotify.com/artist/1SIocsqdEefUTE6XKGUiVS"
+                href="https://open.spotify.com/artist/305pg6Bs6Mz9Tm2zK66psY"
                 className="underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                BABYMONSTER
+                Cosmic Boy
               </a>
             </span>{" "}
             has been on repeat. Want to see your own stats? Check out my{" "}
@@ -256,19 +256,23 @@ export default function Home() {
             >
               Spotify Stats App
             </a>{" "}
-            (shameless plug). But yeah, I love music and I'm always looking for
-            new stuff to listen to, so send me your recs!
+            (shameless plug).
           </p>
           <p className="text-xl mt-5">
-            Video games have always been a HUGE part of my life. They hold a
-            special place in my heart. Some of my favorite memories come from
-            staying up late playing gaming with friends, playing tournaments,
-            and just having fun.
+            Video games have always been a huge part of my life. Some of my best
+            memories come from late-night gaming and tournaments with friends.
+            If I have time, I'll play{" "}
+            <span className="text-red-500">Valorant</span>, and recently, I've
+            been playing <span className="text-cyan-400">Fortnite</span> again
+            with my friends.
           </p>
+
           <p className="text-xl mt-5">
             <span className="font-bold">Fun fact:</span> I’ve rewatched Reply
             1988 more times than I’m willing to admit. No regrets.{" "}
-            <span className="text-red-500">Please please please watch it.</span>
+            <span className="text-red-500 font-bold">
+              Please please please watch it.
+            </span>
           </p>
           <p className="text-xl mt-5">
             Recently, I’ve gotten into golf. I'm absolutely terrible at it, but
@@ -283,9 +287,9 @@ export default function Home() {
             Contact Me
           </h1>
           <p className="text-xl mt-7">
-            I appreciate you stopping by. If you're curious about my work
-            experience, projects, or just want to connect, feel free to reach
-            out on LinkedIn or shoot me an email!
+            Thanks for stopping by. If you're curious about my work, projects,
+            or just want to connect, feel free to reach out on LinkedIn or shoot
+            me an email!
           </p>
 
           <div className="flex flex-row gap-4 justify-start mt-8 text-gray-100">

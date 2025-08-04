@@ -13,7 +13,8 @@ export default function ProjectCard({
   hideLive,
 }) {
   return (
-    <div className="flex flex-col items-center text-white mb-16 min-w-[320px] max-w-[360px]">
+
+    <div className="flex flex-col items-center  text-white mb-16 min-w-[320px] max-w-[360px]">
       <img
         src={image}
         alt={`${title} preview`}
@@ -36,7 +37,7 @@ export default function ProjectCard({
       )}
 
       <p
-        className={`text-lg mt-6 text-left break-normal whitespace-pre-line ${descriptionClass}`}
+        className={`text-lg mt-6 text-center break-normal whitespace-pre-line ${descriptionClass}`}
       >
         {description}
       </p>
