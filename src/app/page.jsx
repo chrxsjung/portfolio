@@ -213,8 +213,10 @@ export default function Home() {
           </p>
           <p className="text-xl mt-5">
             I can't live without music. I mainly listen to Korean music across
-            all genres like ballads, rap, kpop, and krnb. Lately, I've been
-            listening to a lot of{" "}
+            all genres like ballads, k-pop, krnb, and k-rap.
+          </p>
+          <p className="text-xl mt-5">
+            Lately, I've been listening to a lot of{" "}
             <span className="text-pink-500">
               <a
                 href="https://open.spotify.com/artist/2MtHuR0W2idZdF7x4wddqq"
@@ -261,10 +263,8 @@ export default function Home() {
           <p className="text-xl mt-5">
             Video games have always been a huge part of my life. Some of my best
             memories come from late-night gaming and tournaments with friends.
-            If I have time, I'll play{" "}
-            <span className="text-red-500">Valorant</span>, and recently, I've
-            been playing <span className="text-cyan-400">Fortnite</span> again
-            with my friends.
+            I usually play <span className="text-red-500">Valorant</span> and{" "}
+            <span className="text-cyan-400">Fortnite</span> with my friends.
           </p>
 
           <p className="text-xl mt-5">
