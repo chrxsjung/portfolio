@@ -34,21 +34,22 @@ export default function Navbar() {
         </button>
 
         <div className="hidden md:flex gap-6 text-base font-medium ml-6 ">
-          <a href="#work" className="hover:underline">
+          <a href="#work" className="underline navbar-link">
             work experience
           </a>
 
-          <a href="#projects" className="hover:underline">
+          <a href="#projects" className="underline navbar-link">
             projects
           </a>
-          <a href="#contact" className="hover:underline">
-            contact me
+          <a href="#random" className="underline navbar-link">
+            about me
           </a>
+
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="underline navbar-link"
           >
             open resume
           </a>
@@ -57,21 +58,22 @@ export default function Navbar() {
 
       {isOpen && (
         <div className="flex flex-col gap-4 mt-4 text-base font-medium md:hidden items-start pl-10">
-          <a href="#work" className="hover:underline">
+          {" "}
+          <a href="#work" className="underline navbar-link">
             work experience
           </a>
-
-          <a href="#projects" className="hover:underline">
+          <a href="#projects" className="underline navbar-link">
             projects
           </a>
-          <a href="#contact" className="hover:underline">
-            contact me
+          <a href="#random" className="underline navbar-link">
+            about me
           </a>
+
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="underline navbar-link"
           >
             open resume
           </a>
