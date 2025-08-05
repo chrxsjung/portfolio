@@ -197,8 +197,7 @@ export default function Home() {
             get to know me
           </h1>
           <p className="text-xl mt-10">
-            I watch all kinds of shows — k-dramas, anime, regular series, you
-            name it. On the top of my head, my favorites are{" "}
+            I watch all kinds of shows from k-dramas to anime to regular series. On the top of my head, my favorites are{" "}
             <span className="italic font-bold">Reply 1988</span>{" "}
             <span className="text-red-500 font-bold">(a MUST watch)</span>,{" "}
             <span className="italic font-bold">The Flash</span>,{" "}
@@ -212,8 +211,8 @@ export default function Home() {
             GOAT, Son Heung-Min.
           </p>
           <p className="text-xl mt-5">
-            I can't live without music. I mainly listen to Korean music across
-            all genres like ballads, k-pop, krnb, and k-rap.
+            I can't live without music. I like listening to Korean music across
+            many genres like ballads, k-pop, and krnb. 
           </p>
           <p className="text-xl mt-5">
             Lately, I've been listening to a lot of{" "}
@@ -228,7 +227,7 @@ export default function Home() {
               </a>
             </span>{" "}
             (you're welcome), and{" "}
-            <span className="text-pink-500">
+            <span className="text-gray-400">
               <a
                 href="https://www.youtube.com/watch?v=iRNxBLK_PVk"
                 className="underline"
@@ -239,7 +238,7 @@ export default function Home() {
               </a>
             </span>{" "}
             by{" "}
-            <span className="text-pink-500">
+            <span className="text-cyan-500">
               <a
                 href="https://open.spotify.com/artist/305pg6Bs6Mz9Tm2zK66psY"
                 className="underline"
