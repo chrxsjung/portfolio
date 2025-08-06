@@ -22,7 +22,7 @@ export default function HorizontalScrollSkills() {
       />
       <SkillCard
         title="Security"
-        skills={["NextAuth.js", "OAuth 2.0", "PKCE", "JWT"]}
+        skills={["NextAuth.js", "Supabase Auth", "OAuth 2.0", "PKCE", "JWT"]}
       />
       <SkillCard title="Exploring" skills={["MongoDB", "AWS", "Docker"]} />
       <SkillCard

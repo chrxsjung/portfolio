@@ -38,6 +38,15 @@ export default function HorizontalScroll() {
         hideLive={true}
       />
       <ProjectCard
+        image="/images/hi.png"
+        status="WIP!"
+        title="Note2Cards"
+        description="A note-taking app that generates flashcards and summaries for you. More features coming soon!"
+        techStack="TypeScript, React, Next.js, Tailwind CSS, Supabase (PostgreSQL), Supabase Auth, OpenAI API"
+        hideGithub={true}
+        hideLive={true}
+      />
+      <ProjectCard
         image="/images/c.jpg"
         status="Completed"
         title="Dynamic Memory Allocator (cse220)"
