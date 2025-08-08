@@ -45,8 +45,7 @@ export default function Home() {
             </span>
             , and <span className="text-cyan-400">Tailwind CSS</span> for the
             frontend, and <span className="text-green-500">Supabase</span>{" "}
-            (PostgreSQL) with <span className="text-sky-400">Node.js</span> and{" "}
-            <span className="text-orange-400">Express</span> for the backend.
+            (PostgreSQL) with <span className="text-sky-400">Node.js</span> and{" "} for the backend.
             Recently, I’ve been expanding my backend skills by exploring{" "}
             <span className="text-green-500">MongoDB</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
