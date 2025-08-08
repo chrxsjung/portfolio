@@ -21,10 +21,11 @@ export default function Home() {
           </h1>
 
           <p className="text-xl mt-7">
-            I'm a junior majoring in computer science at the{" "}
-            <span className="text-blue-500">University at Buffalo</span>, with a
-            strong interest in full-stack web development. I'm always looking
-            for new ways to learn, build, and grow as a developer.
+            I'm a junior majoring in Computer Science at the{" "}
+            <span className="text-blue-500">University at Buffalo</span> with a
+            strong passion for full-stack web development. I’m always exploring
+            new technologies and building projects that help me grow as a
+            developer.
           </p>
 
           <p className="text-xl mt-5">
@@ -35,23 +36,26 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            I build my projects using{" "}
-            <span className="text-yellow-400">JavaScript</span>,{" "}
-            <span className="text-blue-500">TypeScript</span>,{" "}
+            I typically work with{" "}
+            <span className="text-yellow-400">JavaScript</span> and{" "}
+            <span className="text-blue-500">TypeScript</span>, using{" "}
             <span className="text-sky-400">React</span>,{" "}
             <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
               Next.js
             </span>
-            , and <span className="text-cyan-400">Tailwind CSS</span>. Recently,
-            I’ve been focused on expanding my backend skills with{" "}
+            , and <span className="text-cyan-400">Tailwind CSS</span> for the
+            frontend, and <span className="text-green-500">Supabase</span>{" "}
+            (PostgreSQL) with <span className="text-sky-400">Node.js</span> and{" "}
+            <span className="text-orange-400">Express</span> for the backend.
+            Recently, I’ve been expanding my backend skills by exploring{" "}
             <span className="text-green-500">MongoDB</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
             <span className="text-sky-400">Docker</span>.
           </p>
 
           <p className="text-xl mt-5">
-            I believe in learning by doing. I build things I’m excited and
-            passionate about and share them with others.
+            I learn best by doing, so I focus on building things that I’m
+            genuinely excited about and sharing them with others.
           </p>
 
           <p className="text-xl mt-5">
@@ -61,7 +65,8 @@ export default function Home() {
             <span className="text-cyan-400">Fortnite</span>, and{" "}
             <span className="text-green-500">FIFA</span>.
           </p>
-          <div className="flex flex-row gap-4 justify-start mt-8 text-gray-100">
+          <div className="flex flex-row gap-4 justify-start mt-8 text-gray-100 items-center font-bold text-xl">
+            Connect with me on:
             <a
               href="https://www.linkedin.com/in/chrxsjung/"
               className="text-white underline"
@@ -128,7 +133,7 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            For the tech department, I worked on the front end of the{" "}
+            I worked on the front end of the{" "}
             <a
               href="https://wearebarbarian.com/"
               className="text-white underline"
@@ -197,7 +202,8 @@ export default function Home() {
             get to know me
           </h1>
           <p className="text-xl mt-10">
-            I watch all kinds of shows from k-dramas to anime to regular series. On the top of my head, my favorites are{" "}
+            I watch all kinds of shows from k-dramas to anime to regular series.
+            On the top of my head, my favorites are{" "}
             <span className="italic font-bold">Reply 1988</span>{" "}
             <span className="text-red-500 font-bold">(a MUST watch)</span>,{" "}
             <span className="italic font-bold">The Flash</span>,{" "}
@@ -212,7 +218,7 @@ export default function Home() {
           </p>
           <p className="text-xl mt-5">
             I can't live without music. I like listening to Korean music across
-            many genres like ballads, k-pop, and krnb. 
+            many genres like ballads, k-pop, and krnb.
           </p>
           <p className="text-xl mt-5">
             Lately, I've been listening to a lot of{" "}
@@ -261,8 +267,8 @@ export default function Home() {
           </p>
           <p className="text-xl mt-5">
             Video games have always been a huge part of my life. Some of my best
-            memories come from late-night gaming and tournaments with friends.
-            I usually play <span className="text-red-500">Valorant</span> and{" "}
+            memories come from late-night gaming and tournaments with friends. I
+            usually play <span className="text-red-500">Valorant</span> and{" "}
             <span className="text-cyan-400">Fortnite</span> with my friends.
           </p>
 
