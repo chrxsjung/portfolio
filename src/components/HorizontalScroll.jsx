@@ -42,7 +42,7 @@ export default function HorizontalScroll() {
         status="WIP!"
         title="Note2Cards"
         description="A note-taking app that generates flashcards and summaries for you. More features coming soon!"
-        techStack="TypeScript, React, Next.js, Tailwind CSS, Supabase (PostgreSQL), Supabase Auth, OpenAI API"
+        techStack="TypeScript, React, Next.js, Tailwind CSS, Supabase (PostgreSQL), Supabase Auth, Groq, OpenAI API"
         hideGithub={true}
         hideLive={true}
       />
