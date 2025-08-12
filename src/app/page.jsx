@@ -125,7 +125,7 @@ export default function Home() {
             Work Experience
           </h1>
           <p className="text-xl mt-7">
-            <span className="font-bold">Summer 2025</span> - I was a technology
+            <span className="font-bold">Summer 2025</span> - I was a full-stack swe 
             intern at <span className="text-orange-500">Barbarian</span>. I was
             part of a 10-member intern team called the Horde, and we worked on
             some really cool client projects together. 🔒
