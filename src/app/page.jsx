@@ -166,8 +166,7 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            I also made great friends and had a blast during the internship.{" "}
-            <span className="text-orange-500">#horde2025</span>
+            I also made great friends and had a blast during the internship.
           </p>
 
           <h1
