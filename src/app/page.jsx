@@ -125,7 +125,7 @@ export default function Home() {
             Work Experience
           </h1>
           <p className="text-xl mt-7">
-            <span className="font-bold">Summer 2025</span> - I was a swe 
+            <span className="font-bold">Summer 2025</span> - I was a SWE 
             intern at <span className="text-orange-500">Barbarian</span>. I was
             part of a 10-member intern team called the Horde, and we worked on
             some really cool client projects together. 🔒
@@ -148,7 +148,7 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            🔒 I also developed and shipped 10+ front-end pages for an internal
+            🔒 I also developed and shipped 5+ pages for an internal
             AI powered tool to help streamline work across the company. I used{" "}
             <span className="text-blue-500 font-semibold">TypeScript</span>,{" "}
             <span className="text-sky-400 font-semibold">React</span>,{" "}
