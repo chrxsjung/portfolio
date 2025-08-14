@@ -37,19 +37,20 @@ export default function Home() {
 
           <p className="text-xl mt-5">
             I primarily work with{" "}
-            <span className="text-yellow-400">JavaScript</span> and{" "}
-            <span className="text-blue-500">TypeScript</span>, using{" "}
-            <span className="text-sky-400">React</span>,{" "}
-            <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
-              Next.js
-            </span>
-            , and <span className="text-cyan-400">Tailwind CSS</span> for the
-            frontend, and <span className="text-green-500">Supabase</span>{" "}
-            (PostgreSQL) with <span className="text-sky-400">Node.js</span>{" "}for the backend.
-            Recently, I’ve been expanding my backend skills by exploring{" "}
-            <span className="text-green-500">MongoDB</span>,{" "}
-            <span className="text-orange-400">AWS</span>, and{" "}
-            <span className="text-sky-400">Docker</span>.
+  <span className="text-yellow-400">JavaScript</span> and{" "}
+  <span className="text-blue-500">TypeScript</span>, using{" "}
+  <span className="text-sky-400">React</span>,{" "}
+  <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
+    Next.js
+  </span>
+  , and <span className="text-cyan-400">Tailwind CSS</span> for the frontend,
+  and <span className="text-sky-400">Node.js</span> with{" "}
+  <span className="text-green-500">Supabase</span> (PostgreSQL) for the backend.
+  Recently, I’ve been expanding my backend skill set by exploring{" "}
+  <span className="text-green-500">MongoDB</span>,{" "}
+  <span className="text-orange-400">AWS</span>, and{" "}
+  <span className="text-sky-400">Docker</span>.
+
           </p>
 
           <p className="text-xl mt-5">
