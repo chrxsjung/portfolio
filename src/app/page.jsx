@@ -36,7 +36,7 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            I typically work with{" "}
+            I primarily work with{" "}
             <span className="text-yellow-400">JavaScript</span> and{" "}
             <span className="text-blue-500">TypeScript</span>, using{" "}
             <span className="text-sky-400">React</span>,{" "}
@@ -176,7 +176,7 @@ export default function Home() {
             Projects
           </h1>
           <p className="text-xl mt-7">
-            I learn best by building. My projects are hosted on{" "}
+            I learn best by building. Most of my projects are hosted on{" "}
             <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
               Vercel
             </span>{" "}
