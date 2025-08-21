@@ -212,7 +212,7 @@ export default function Home() {
 
           <p className="text-xl mt-5">
             I'm also a huge fan of soccer and have been since I was a kid. I
-            follow most leagues and tournaments. I'm a big fan of the Korean
+            follow basically all major leagues and tournaments. I'm a big fan of the Korean
             GOAT, Son Heung-Min.
           </p>
           <p className="text-xl mt-5">
@@ -266,18 +266,10 @@ export default function Home() {
           </p>
           <p className="text-xl mt-5">
             Video games have always been a huge part of my life. Some of my best
-            memories come from late-night gaming and tournaments with friends. I
-            usually play <span className="text-red-500">Valorant</span> and{" "}
-            <span className="text-cyan-400">Fortnite</span> with my friends.
+            memories come from late-night gaming and tournaments with friends. 
           </p>
 
-          <p className="text-xl mt-5">
-            <span className="font-bold">Fun fact:</span> I’ve rewatched Reply
-            1988 more times than I’m willing to admit. No regrets.{" "}
-            <span className="text-red-500 font-bold">
-              Please please please watch it.
-            </span>
-          </p>
+
           <p className="text-xl mt-5">
             Recently, I’ve gotten into golf. I'm absolutely terrible at it, but
             at least the walk’s nice. So on the weekends, when I'm not gaming or

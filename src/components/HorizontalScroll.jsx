@@ -10,7 +10,7 @@ export default function HorizontalScroll() {
     >
       <ProjectCard
         image="/images/spotify.jpg"
-        status="working on new features (AI powered)"
+        status="working on new features"
         liveUrl="https://spotify-stats-v2-inky.vercel.app/"
         githubUrl="https://github.com/chrxsjung/spotify-stats-v2"
         title="Spotify Stats"
@@ -19,14 +19,22 @@ export default function HorizontalScroll() {
       />
       <ProjectCard
         image="/images/epl.jpg"
-        status="working on fixing goalkeeper stats and more..."
+        status="working on new features"
         liveUrl="https://soccer-stats-taupe.vercel.app/"
         githubUrl="https://github.com/chrxsjung/soccer-stats"
         title="EPL Stats"
         description="A web app that allows you to view stats for the English Premier League. Season toggle, advanced stats, and more. "
         techStack="JavaScript with Vite, Supabase (PostgreSQL), API-Football"
       />
-
+      <ProjectCard
+        image="/images/hi.png"
+        status="WIP! Top Priority."
+        title="Note2Cards"
+        description="A note-taking app that generates flashcards and summaries for you. Share flashcards with classmates and study together!"
+        techStack="TypeScript, React, Next.js, Tailwind CSS, Supabase (PostgreSQL), Supabase Auth, Groq, OpenAI API"
+        hideGithub={true}
+        hideLive={true}
+      />
       <ProjectCard
         image="/images/home-bg.jpg"
         status="working on improvements"
@@ -37,15 +45,7 @@ export default function HorizontalScroll() {
         hideGithub={false}
         hideLive={true}
       />
-      <ProjectCard
-        image="/images/hi.png"
-        status="WIP!"
-        title="Note2Cards"
-        description="A note-taking app that generates flashcards and summaries for you. More features coming soon!"
-        techStack="TypeScript, React, Next.js, Tailwind CSS, Supabase (PostgreSQL), Supabase Auth, Groq, OpenAI API"
-        hideGithub={true}
-        hideLive={true}
-      />
+
       <ProjectCard
         image="/images/c.jpg"
         status="Completed"
