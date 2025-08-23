@@ -28,10 +28,14 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            Recently, I’ve been expanding my backend skill set by exploring{" "}
+            Recently, I’ve been expanding my backend skills with{" "}
             <span className="text-green-500">MongoDB</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
-            <span className="text-sky-400">Docker</span>.
+            <span className="text-sky-400">Docker</span>. One thing I'm super
+            focused on is keeping my apps secure by researching best practices
+            like <span className="font-semibold">JWT</span>,{" "}
+            <span className="font-semibold">OAuth 2.0</span>,{" "}
+            <span className="font-semibold">cookies</span>, and more.
           </p>
 
           <p className="text-xl mt-5">
@@ -154,7 +158,8 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            I also made lifelong friends and had a blast during the internship. 10/10.
+            I also made lifelong friends and had a blast during the internship.
+            10/10.
           </p>
 
           <h1 id="projects" className="font-bold text-4xl sm:text-6xl mt-12">
@@ -166,7 +171,8 @@ export default function Home() {
               Vercel
             </span>{" "}
             showcasing both the technologies I’m confident with and the new ones
-            I’m actively exploring.
+            I’m actively exploring. If any of my projects has security flaws,
+            please let me know!
           </p>
 
           <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
