@@ -18,7 +18,7 @@ export default function HorizontalScrollSkills() {
       />
       <SkillCard
         title="Backend"
-        skills={["Node.js", "Express", "Supabase", "PostgreSQL", "REST APIs"]}
+        skills={["Node.js", "Express.js", "Supabase", "PostgreSQL", "SQL", "REST APIs"]}
       />
       <SkillCard
         title="Security"

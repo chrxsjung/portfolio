@@ -14,7 +14,7 @@ export default function HorizontalScroll() {
         liveUrl="https://spotify-stats-v2-inky.vercel.app/"
         githubUrl="https://github.com/chrxsjung/spotify-stats-v2"
         title="Spotify Stats"
-        description="A web app that allows you to view your Spotify listening history. Top artists, top songs, recently played, and more."
+        description="A web app that allows you to view your Spotify stats, including top artists, top songs, recently played, and more."
         techStack="JavaScript, React, Next.js, Tailwind CSS, Spotify API, NextAuth"
       />
       <ProjectCard
@@ -23,14 +23,14 @@ export default function HorizontalScroll() {
         liveUrl="https://soccer-stats-taupe.vercel.app/"
         githubUrl="https://github.com/chrxsjung/soccer-stats"
         title="EPL Stats"
-        description="A web app that allows you to view stats for the English Premier League. Season toggle, advanced stats, and more. "
+        description="A web app that allows you to view stats for the English Premier League. Season toggle, advanced stats, and more."
         techStack="JavaScript with Vite, Supabase (PostgreSQL), API-Football"
       />
       <ProjectCard
         image="/images/hi.png"
         status="WIP! Top Priority."
         title="Note2Cards"
-        description="A note-taking app that generates flashcards and summaries for you. Share flashcards with classmates and study together!"
+        description="A note-taking app that generates flashcards and summaries for you. Shareable with classmates!"
         techStack="TypeScript, React, Next.js, Tailwind CSS, Supabase (PostgreSQL), Supabase Auth, Groq, OpenAI API"
         hideGithub={true}
         hideLive={true}

@@ -16,45 +16,27 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 flex justify-start mb-12 w-full px-[5%] md:px-[8%] lg:px-[12%] ">
         <div className="flex flex-col text-left text-gray-200 p-6 md:p-12 w-full md:max-w-[90%] lg:max-w-[80%] container-everything">
-          <h1 className="font-bold text-4xl sm:text-6xl typing text-yellow-400 nameblock">
+          <h1 className="font-bold text-4xl sm:text-6xl typing nameblock">
             Hi, I'm Chris.
           </h1>
 
           <p className="text-xl mt-7">
             I'm a junior majoring in Computer Science at the{" "}
             <span className="text-blue-500">University at Buffalo</span> with a
-            strong passion for full-stack web development. I’m always exploring
-            new technologies and building projects that help me grow as a
-            developer.
+            strong passion for full-stack web development. I'm constantly
+            finding ways to grow as a developer.
           </p>
 
           <p className="text-xl mt-5">
-            I'm currently seeking a software engineering internship for{" "}
-            <span className="text-red-400 font-semibold">Summer 2026</span>. If
-            you'd like to connect, or just want to chat, feel free to contact
-            me. I'd love to hear from you!
-          </p>
-
-          <p className="text-xl mt-5">
-            I primarily work with{" "}
-            <span className="text-yellow-400">JavaScript</span> and{" "}
-            <span className="text-blue-500">TypeScript</span>, using{" "}
-            <span className="text-sky-400">React</span>,{" "}
-            <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
-              Next.js
-            </span>
-            , and <span className="text-cyan-400">Tailwind CSS</span> for the
-            frontend, and <span className="text-sky-400">Node.js</span> with{" "}
-            <span className="text-green-500">Supabase</span> (PostgreSQL) for
-            the backend. Recently, I’ve been expanding my backend skill set by
-            exploring <span className="text-green-500">MongoDB</span>,{" "}
+            Recently, I’ve been expanding my backend skill set by exploring{" "}
+            <span className="text-green-500">MongoDB</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
             <span className="text-sky-400">Docker</span>.
           </p>
 
           <p className="text-xl mt-5">
             I learn best by doing, so I focus on building things that I’m
-            genuinely excited about and sharing them with others.
+            genuinely excited about and share them with others.
           </p>
 
           <p className="text-xl mt-5">
@@ -64,6 +46,14 @@ export default function Home() {
             <span className="text-cyan-400">Fortnite</span>, and{" "}
             <span className="text-green-500">FIFA</span>.
           </p>
+
+          <p className="text-xl mt-5">
+            I'm currently seeking a software engineering internship for{" "}
+            <span className="text-red-400 font-semibold">Summer 2026</span>. If
+            you'd like to connect, or just want to chat, feel free to contact
+            me. I'd love to hear from you!
+          </p>
+
           <div className="flex flex-row gap-4 justify-start mt-8 text-gray-100 items-center font-bold text-xl">
             Connect with me on:
             <a
@@ -105,7 +95,7 @@ export default function Home() {
           <HorizontalScrollSkills />
 
           <div className="flex flex-col justify-start text-left text-gray-300 space-y-4 mt-10">
-            <p className="font-bold text-4xl sm:text-6xl mt-8 text-yellow-400">
+            <p className="font-bold text-4xl sm:text-6xl mt-8">
               Want to see what I’ve worked on?{" "}
             </p>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-4">
@@ -118,10 +108,7 @@ export default function Home() {
             </div>
           </div>
 
-          <h1
-            id="work"
-            className="font-bold text-4xl sm:text-6xl mt-12 text-yellow-400"
-          >
+          <h1 id="work" className="font-bold text-4xl sm:text-6xl mt-12">
             Work Experience
           </h1>
           <p className="text-xl mt-7">
@@ -148,8 +135,9 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            🔒 I also developed and shipped 5+ pages for an internal AI powered
-            tool to help streamline work across the company. I used{" "}
+            🔒 I also developed and shipped 5+ pages and over 10+ features from
+            scratch for an internal AI powered tool to help streamline work
+            across the company. I used{" "}
             <span className="text-blue-500 font-semibold">TypeScript</span>,{" "}
             <span className="text-sky-400 font-semibold">React</span>,{" "}
             <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
@@ -166,13 +154,10 @@ export default function Home() {
           </p>
 
           <p className="text-xl mt-5">
-            I also made great friends and had a blast during the internship.
+            I also made lifelong friends and had a blast during the internship. 10/10.
           </p>
 
-          <h1
-            id="projects"
-            className="font-bold text-4xl sm:text-6xl mt-12 text-yellow-400"
-          >
+          <h1 id="projects" className="font-bold text-4xl sm:text-6xl mt-12">
             Projects
           </h1>
           <p className="text-xl mt-7">
@@ -180,23 +165,19 @@ export default function Home() {
             <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
               Vercel
             </span>{" "}
-            and reflect both the tools I’m confident with and the new ones I’m
-            exploring.
+            showcasing both the technologies I’m confident with and the new ones
+            I’m actively exploring.
           </p>
 
           <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
-            <ArrowRight className="w-12 h-12 text-blue-500" />
-            <ArrowRight className="w-12 h-12 text-blue-500" />
-
-            <ArrowRight className="w-12 h-12 text-blue-500" />
+            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
             <p className="text-xl">Scroll to the right to see more.</p>
           </div>
 
           <HorizontalScroll />
-          <h1
-            id="random"
-            className="font-bold text-4xl sm:text-6xl text-yellow-400 mt-12"
-          >
+          <h1 id="random" className="font-bold text-4xl sm:text-6xl mt-12">
             get to know me
           </h1>
           <p className="text-xl mt-10">
@@ -274,10 +255,7 @@ export default function Home() {
             coding, you'll probably find me on the golf course.
           </p>
 
-          <h1
-            id="contact"
-            className="font-bold text-4xl sm:text-6xl text-yellow-400 mt-12 "
-          >
+          <h1 id="contact" className="font-bold text-4xl sm:text-6xl mt-12 ">
             Contact Me
           </h1>
           <p className="text-xl mt-7">

@@ -38,16 +38,7 @@
   font-style: normal;
 }
 
-body {
-  font-family: 'Supreme-Regular';
-  background-size: cover;
-  background-position: center;
-  position: relative;
 
-  background-image: url('/images/home-bg.jpg');
-  background-attachment: fixed;
-
-}
 
 @media (max-width: 900px) {
   body {
@@ -123,8 +114,10 @@ body::before {
   }
 }
 
-h1,
+hi,
 .navbar-link:hover {
+  color: #FAFAF9;
+
   background: linear-gradient(135deg,
       #1e3a8a,
       #3b82f6 30%,
@@ -133,11 +126,11 @@ h1,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
 }
 
 h1 {
   padding-bottom: 5px;
+
 }
 
 ::-webkit-scrollbar {
@@ -152,4 +145,16 @@ h1 {
 
 html {
   scrollbar-color: #4a90e2 #0d0d0d;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Supreme-Regular';
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-image: url('/images/home-bg.jpg');
+  background-attachment: fixed;
+  overscroll-behavior: none;
 }
