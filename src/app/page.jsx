@@ -51,7 +51,7 @@ export default function Home() {
             Recently, I’ve been expanding my backend skills by picking up{" "}
             <span className="text-green-500">MongoDB</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
-            <span className="text-sky-400">Docker</span>. One thing I’m always
+            <span className="text-sky-400">Docker</span>. Another thing I’m 
             working on is keeping my apps secure by researching and implementing
             best practices like <span className="font-semibold">JWT</span>,{" "}
             <span className="font-semibold">OAuth 2.0</span>,{" "}
@@ -195,8 +195,9 @@ export default function Home() {
                 Vercel
               </span>{" "}
               showcasing both the technologies I’m confident with and the new
-              ones I’m actively exploring. If any of my projects contain
-              security flaws, please let me know!
+              ones I’m actively exploring. If you spot any security issues in my projects, 
+              feel free to point them out. I’m still learning and want to get 
+              better at it.
             </p>
 
             <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
