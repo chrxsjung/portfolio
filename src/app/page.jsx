@@ -161,7 +161,7 @@ export default function Home() {
 
           <p className="text-xl mt-5">
             I also made lifelong friends and had a blast during the internship.
-            10/10.
+            10/10 experience.
           </p>
 
           <h1 id="projects" className="font-bold text-4xl sm:text-6xl mt-12">
