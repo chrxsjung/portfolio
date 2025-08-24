@@ -55,8 +55,7 @@ export default function Home() {
             working on is keeping my apps secure by researching and implementing
             best practices like <span className="font-semibold">JWT</span>,{" "}
             <span className="font-semibold">OAuth 2.0</span>,{" "}
-            <span className="font-semibold">cookies</span>, and{" "}
-            <span className="font-semibold">server-side API routes</span>.
+            <span className="font-semibold">cookies</span>, and more.
           </p>
 
           <p className="text-xl mt-5">
