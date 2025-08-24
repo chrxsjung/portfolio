@@ -5,8 +5,9 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata = {
   title: "Chris Jung | Portfolio",
   description:
-    "Chris Jung — Aspiring Software Engineer and Computer Science student at University at Buffalo. Portfolio showcasing full-stack projects with React, Next.js, Tailwind, and Supabase.",
+    "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
   keywords: [
+    "Portfolio",
     "Chris Jung",
     "Christopher Jung",
     "Software Engineer",
@@ -30,7 +31,7 @@ export const metadata = {
   openGraph: {
     title: "Chris Jung | Portfolio",
     description:
-      "Chris Jung — Aspiring Software Engineer and Computer Science student at University at Buffalo. Portfolio showcasing full-stack projects with React, Next.js, Tailwind, and Supabase.",
+      "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
     url: "https://chrxsjung.me",
     siteName: "Chris Jung Portfolio",
     images: [
@@ -48,7 +49,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Chris Jung | Portfolio",
     description:
-      "Chris Jung — Aspiring Software Engineer and Computer Science student at University at Buffalo. Portfolio showcasing full-stack projects with React, Next.js, Tailwind, and Supabase.",
+      "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
     images: ["https://chrxsjung.me/og-image.png"],
   },
   alternates: {
