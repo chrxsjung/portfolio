@@ -109,9 +109,9 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row gap-2 justify-start items-center mt-8 text-gray-100">
-            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-            <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
             <p className="text-xl">
               Scroll to the right to see my tech skills and what I'm learning.
             </p>
@@ -122,22 +122,22 @@ export default function Home() {
           <div className="flex flex-col justify-start text-left text-gray-300 space-y-4 mt-10">
             <p className="font-bold text-4xl sm:text-6xl mt-8">
               Want to see what I’ve worked on?{" "}
-            </p>
+            </p> 
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-4">
               Scroll down and browse through my recent internship and projects.
             </p>
             <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
-              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
-              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />{" "}
-              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
+              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
+              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />{" "}
+              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
             </div>
           </div>
 
           {/* SECTION LANDMARKS START */}
           <section aria-labelledby="work">
-            <h1 id="work" className="font-bold text-4xl sm:text-6xl mt-12">
+            <h2 id="work" className="font-bold text-4xl sm:text-6xl mt-12">
               Work Experience
-            </h1>
+            </h2>
             <p className="text-xl mt-7">
               <span className="font-bold">Summer 2025</span> - I was a SWE
               intern at <span className="text-orange-500">Barbarian</span>. I
@@ -187,9 +187,9 @@ export default function Home() {
           </section>
 
           <section aria-labelledby="projects">
-            <h1 id="projects" className="font-bold text-4xl sm:text-6xl mt-12">
+            <h2 id="projects" className="font-bold text-4xl sm:text-6xl mt-12">
               Projects
-            </h1>
+            </h2>
             <p className="text-xl mt-7">
               I learn best by building. Most of my projects are hosted on{" "}
               <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
@@ -201,9 +201,9 @@ export default function Home() {
             </p>
 
             <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
-              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-              <ArrowDown className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
               <p className="text-xl">Scroll to the right to see more.</p>
             </div>
 
@@ -211,9 +211,9 @@ export default function Home() {
           </section>
 
           <section aria-labelledby="random">
-            <h1 id="random" className="font-bold text-4xl sm:text-6xl mt-12">
+            <h2 id="random" className="font-bold text-4xl sm:text-6xl mt-12">
               get to know me
-            </h1>
+            </h2>
             <p className="text-xl mt-10">
               I watch all kinds of shows from k-dramas to anime to regular
               series. On the top of my head, my favorites are{" "}
@@ -294,9 +294,9 @@ export default function Home() {
           </section>
 
           <section aria-labelledby="contact">
-            <h1 id="contact" className="font-bold text-4xl sm:text-6xl mt-12 ">
+            <h2 id="contact" className="font-bold text-4xl sm:text-6xl mt-12 ">
               Contact Me
-            </h1>
+            </h2>
             <p className="text-xl mt-7">
               Thanks for stopping by. If you're curious about my work, projects,
               or just want to connect, feel free to reach out on LinkedIn or
