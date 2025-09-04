@@ -43,27 +43,27 @@ export default function Home() {
           <p className="text-xl mt-7">
             I'm a junior majoring in Computer Science at the{" "}
             <span className="text-blue-500">University at Buffalo</span> with a
-            strong passion for full-stack web development. I'm constantly
-            finding ways to grow as a Software Engineer.
+            strong passion for full-stack development. I'm constantly
+            finding ways to grow as a developer.
+          </p>
+          
+           <p className="text-xl mt-5">
+            I learn best by doing, so I focus on building things that I’m
+            genuinely excited about and share them with others.
           </p>
 
           <p className="text-xl mt-5">
             Recently, I’ve been expanding my backend skills by picking up{" "}
             <span className="text-green-500">MongoDB</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
-            <span className="text-sky-400">Docker</span>. One thing I’m always
+            <span className="text-sky-400">Docker</span>. Another thing I’m 
             working on is keeping my apps secure by researching and implementing
             best practices like <span className="font-semibold">JWT</span>,{" "}
             <span className="font-semibold">OAuth 2.0</span>,{" "}
-            <span className="font-semibold">cookies</span>, and{" "}
-            <span className="font-semibold">server-side API routes</span>.
+            <span className="font-semibold">cookies</span>, and more.
           </p>
 
-          <p className="text-xl mt-5">
-            I learn best by doing, so I focus on building things that I’m
-            genuinely excited about and share them with others.
-          </p>
-
+        
           <p className="text-xl mt-5">
             Outside of coding, I enjoy watching k-dramas, listening to music,
             following soccer, and playing video games like{" "}
@@ -196,9 +196,14 @@ export default function Home() {
                 Vercel
               </span>{" "}
               showcasing both the technologies I’m confident with and the new
-              ones I’m actively exploring. If any of my projects contain
-              security flaws, please let me know!
+              ones I’m actively exploring. 
             </p>
+            
+            <p className="text-xl mt-7">
+              If you spot any security issues in my projects, 
+              feel free to point them out. I’m still learning and want to get 
+              better at it.
+              </p>
 
             <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
               <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />

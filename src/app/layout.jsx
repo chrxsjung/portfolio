@@ -22,6 +22,8 @@ export const metadata = {
     "Tailwind CSS",
     "Supabase",
     "Portfolio Website",
+    "Personal Website",
+    "Website",
     "UB",
     "UB CSE",
     "UB Computer Science",
