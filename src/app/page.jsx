@@ -43,11 +43,11 @@ export default function Home() {
           <p className="text-xl mt-7">
             I'm a junior majoring in Computer Science at the{" "}
             <span className="text-blue-500">University at Buffalo</span> with a
-            strong passion for full-stack development. I'm constantly
-            finding ways to grow as a developer.
+            strong passion for full-stack development. I'm constantly finding
+            ways to grow as a developer.
           </p>
-          
-           <p className="text-xl mt-5">
+
+          <p className="text-xl mt-5">
             I learn best by doing, so I focus on building things that I’m
             genuinely excited about and share them with others.
           </p>
@@ -56,14 +56,13 @@ export default function Home() {
             Recently, I’ve been expanding my backend skills by picking up{" "}
             <span className="text-green-500">MongoDB</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
-            <span className="text-sky-400">Docker</span>. Another thing I’m 
+            <span className="text-sky-400">Docker</span>. Another thing I’m
             working on is keeping my apps secure by researching and implementing
             best practices like <span className="font-semibold">JWT</span>,{" "}
             <span className="font-semibold">OAuth 2.0</span>,{" "}
             <span className="font-semibold">cookies</span>, and more.
           </p>
 
-        
           <p className="text-xl mt-5">
             Outside of coding, I enjoy watching k-dramas, listening to music,
             following soccer, and playing video games like{" "}
@@ -109,9 +108,21 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row gap-2 justify-start items-center mt-8 text-gray-100">
-            <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-            <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-            <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+            <ArrowDown
+              aria-hidden="true"
+              focusable="false"
+              className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
+            />
+            <ArrowDown
+              aria-hidden="true"
+              focusable="false"
+              className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
+            />
+            <ArrowDown
+              aria-hidden="true"
+              focusable="false"
+              className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
+            />
             <p className="text-xl">
               Scroll to the right to see my tech skills and what I'm learning.
             </p>
@@ -122,14 +133,26 @@ export default function Home() {
           <div className="flex flex-col justify-start text-left text-gray-300 space-y-4 mt-10">
             <p className="font-bold text-4xl sm:text-6xl mt-8">
               Want to see what I’ve worked on?{" "}
-            </p> 
+            </p>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-4">
               Scroll down and browse through my recent internship and projects.
             </p>
             <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
-              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
-              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />{" "}
-              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce mt-4 " />
+              <ArrowDown
+                aria-hidden="true"
+                focusable="false"
+                className="w-12 h-12 text-blue-500 animate-bounce mt-4 "
+              />
+              <ArrowDown
+                aria-hidden="true"
+                focusable="false"
+                className="w-12 h-12 text-blue-500 animate-bounce mt-4 "
+              />{" "}
+              <ArrowDown
+                aria-hidden="true"
+                focusable="false"
+                className="w-12 h-12 text-blue-500 animate-bounce mt-4 "
+              />
             </div>
           </div>
 
@@ -170,8 +193,10 @@ export default function Home() {
               <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
                 Next.js
               </span>
-              , and{" "}
-              <span className="text-cyan-400 font-semibold">Tailwind CSS</span>.
+              ,{" "}
+              <span className="text-cyan-400 font-semibold">Tailwind CSS</span>{" "}
+              and <span className="text-green-500 font-semibold">Supabase</span>
+              .
             </p>
 
             <p className="text-xl mt-5">
@@ -196,19 +221,30 @@ export default function Home() {
                 Vercel
               </span>{" "}
               showcasing both the technologies I’m confident with and the new
-              ones I’m actively exploring. 
+              ones I’m actively exploring.
             </p>
-            
+
             <p className="text-xl mt-7">
-              If you spot any security issues in my projects, 
-              feel free to point them out. I’m still learning and want to get 
-              better at it.
-              </p>
+              If you spot any security issues in my projects, feel free to point
+              them out. I’m still learning and want to get better at it.
+            </p>
 
             <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
-              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
-              <ArrowDown aria-hidden="true" focusable="false" className="w-12 h-12 text-blue-500 animate-bounce -rotate-90" />
+              <ArrowDown
+                aria-hidden="true"
+                focusable="false"
+                className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
+              />
+              <ArrowDown
+                aria-hidden="true"
+                focusable="false"
+                className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
+              />
+              <ArrowDown
+                aria-hidden="true"
+                focusable="false"
+                className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
+              />
               <p className="text-xl">Scroll to the right to see more.</p>
             </div>
 
