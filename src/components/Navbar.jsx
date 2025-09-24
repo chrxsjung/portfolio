@@ -46,7 +46,7 @@ export default function Navbar() {
           </a>
 
           <a
-            href="/resume/ChristopherJung_Resume_2025.pdf"
+            href="/resume/ChristopherJung_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="underline navbar-link"
