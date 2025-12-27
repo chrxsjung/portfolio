@@ -6,8 +6,18 @@ export default function HorizontalScroll() {
   return (
     <ScrollContainer
       hideScrollbars={false}
-      className="flex flex-row gap-12 mt-10 overflow-x-auto whitespace-nowrap pr-4 cursor-grab active:cursor-grabbing "
+      className="flex flex-row gap-12 mt-10 overflow-x-auto whitespace-nowrap pr-4 cursor-grab active:cursor-grabbing items-stretch "
     >
+      <ProjectCard
+        image="/images/resume.webp"
+        status="WIP! Top Priority."
+        title="Internship Hub"
+        githubUrl="https://github.com/chrxsjung/internship_hub"
+        description="Tools for internship seekers! Resume optimization, project ideas generator, cover letter generator, and more coming soon!"
+        techStack="JavaScript, React, Next.js, Tailwind CSS, Supabase, Supabase Auth, Groq"
+        hideGithub={false}
+        hideLive={true}
+      />
       <ProjectCard
         image="/images/spotify.jpg"
         status="working on new features"
@@ -26,15 +36,7 @@ export default function HorizontalScroll() {
         description="A web app that allows you to view stats for the English Premier League. Season toggle, advanced stats, and more."
         techStack="JavaScript with Vite, Supabase (PostgreSQL), API-Football"
       />
-      <ProjectCard
-        image="/images/hi.png"
-        status="WIP! Top Priority."
-        title="Note2Cards"
-        description="A note-taking app that generates flashcards and summaries for you. Shareable with classmates!"
-        techStack="TypeScript, React, Next.js, Tailwind CSS, Supabase (PostgreSQL), Supabase Auth, Groq, OpenAI API"
-        hideGithub={true}
-        hideLive={true}
-      />
+
       <ProjectCard
         image="/images/home-bg.jpg"
         status="working on improvements"
@@ -43,6 +45,19 @@ export default function HorizontalScroll() {
         description="My portfolio website! I'm going to continue updating it with new projects and experiences. And make it pretty:) "
         techStack={`JavaScript, React, Next.js\nand Tailwind CSS`}
         hideGithub={false}
+        hideLive={true}
+      />
+
+      <ProjectCard
+        image="/images/python.webp"
+        status="Completed"
+        title="Python HTTP Server (cse312)"
+        description="
+Built a custom Python HTTP server with routing and cookies, secure authentication (OAuth 2.0, bcrypt, 2FA), MongoDB-backed chat CRUD, and real-time media streaming via WebSockets using Docker and Nginx.
+
+        "
+        techStack="Python, MongoDB, Docker, FFmpeg, REST APIs"
+        hideGithub={true}
         hideLive={true}
       />
 

@@ -10,7 +10,7 @@ export default function HorizontalScrollSkills() {
     >
       <SkillCard
         title="Languages"
-        skills={["JavaScript", "TypeScript", "Python", "Java", "C", "OCaml"]}
+        skills={["Python", "JavaScript", "TypeScript", "Java", "C", "OCaml"]}
       />
       <SkillCard
         title="Frontend"
@@ -18,17 +18,15 @@ export default function HorizontalScrollSkills() {
       />
       <SkillCard
         title="Backend"
-        skills={["Node.js", "Express.js", "Supabase", "PostgreSQL", "SQL", "REST APIs"]}
+        skills={["Node.js", "Express.js", "Supabase", "PostgreSQL", "MongoDB", "REST APIs"]}
       />
-      <SkillCard
-        title="Security"
-        skills={["NextAuth.js", "Supabase Auth", "OAuth 2.0", "PKCE", "JWT"]}
-      />
-      <SkillCard title="Exploring" skills={["MongoDB", "AWS", "Docker"]} />
+
       <SkillCard
         title="Tools"
         skills={["Git", "GitHub", "Vercel", "UNIX", "Figma", "Jira"]}
-      />{" "}
+      />
+            <SkillCard title="Exploring" skills={["MongoDB", "AWS", "Docker"]} />
+
     </ScrollContainer>
   );
 }

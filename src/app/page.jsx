@@ -59,15 +59,16 @@ export default function Home() {
             <span className="text-sky-400">Docker</span>. Another thing I’m
             working on is keeping my apps secure by researching and implementing
             best practices like <span className="font-semibold">JWT</span>,{" "}
-            <span className="font-semibold">OAuth 2.0</span>,{" "}
-            <span className="font-semibold">cookies</span>, and more.
+            <span className="font-semibold">Authentication</span>,{" "}
+            <span className="font-semibold">Input sanitization</span>, and more.
           </p>
 
           <p className="text-xl mt-5">
             Outside of coding, I enjoy watching k-dramas, listening to music,
             following soccer, and playing video games like{" "}
             <span className="text-red-500">Valorant</span>,{" "}
-            <span className="text-cyan-400">Fortnite</span>, and{" "}
+            <span className="text-cyan-400">Fortnite</span>, {" "}
+            <span className="text-purple-500">Roblox</span>, and{" "}
             <span className="text-green-500">FIFA</span>.
           </p>
 
@@ -186,7 +187,7 @@ export default function Home() {
 
             <p className="text-xl mt-5">
               🔒 I also developed and shipped 5+ pages and over 10+ features
-              from scratch for an internal AI powered tool to help streamline
+              from scratch for a new AI powered internal tool to help streamline
               work across the company. I used{" "}
               <span className="text-blue-500 font-semibold">TypeScript</span>,{" "}
               <span className="text-sky-400 font-semibold">React</span>,{" "}
@@ -245,7 +246,7 @@ export default function Home() {
                 focusable="false"
                 className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
               />
-              <p className="text-xl">Scroll to the right to see more.</p>
+              <p className="text-xl">Scroll to the right to see more. (Academic Projects toward the end)</p>
             </div>
 
             <HorizontalScroll />
@@ -274,7 +275,7 @@ export default function Home() {
             </p>
             <p className="text-xl mt-5">
               I can't live without music. I like listening to Korean music
-              across many genres like ballads, k-pop, and krnb.
+              across many genres like ballads, k-pop, and krnb. And recently I've been listening to a lot of EDM as well. 
             </p>
             <p className="text-xl mt-5">
               Lately, I've been listening to a lot of{" "}
