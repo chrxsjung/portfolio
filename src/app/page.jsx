@@ -18,6 +18,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Person",
             name: "Chris Jung",
+            alternateName: "Christopher Jung",
             givenName: "Chris",
             familyName: "Jung",
             url: "https://chrxsjung.me",
@@ -30,6 +31,22 @@ export default function Home() {
               "https://www.linkedin.com/in/chrxsjung/",
               "https://github.com/chrxsjung",
             ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Chris Jung Portfolio",
+            url: "https://chrxsjung.me",
+            inLanguage: "en-US",
+            about: {
+              "@type": "Person",
+              name: "Chris Jung",
+            },
           }),
         }}
       />
@@ -54,7 +71,7 @@ export default function Home() {
 
           <p className="text-xl mt-5">
             Recently, I’ve been expanding my backend skills by picking up{" "}
-            <span className="text-green-500">MongoDB</span>,{" "}
+            <span className="text-green-500">Spring Boot</span>,{" "}
             <span className="text-orange-400">AWS</span>, and{" "}
             <span className="text-sky-400">Docker</span>. Another thing I’m
             working on is keeping my apps secure by researching and implementing
@@ -67,7 +84,7 @@ export default function Home() {
             Outside of coding, I enjoy watching k-dramas, listening to music,
             following soccer, and playing video games like{" "}
             <span className="text-red-500">Valorant</span>,{" "}
-            <span className="text-cyan-400">Fortnite</span>, {" "}
+            <span className="text-cyan-400">Fortnite</span>,{" "}
             <span className="text-purple-500">Roblox</span>, and{" "}
             <span className="text-green-500">FIFA</span>.
           </p>
@@ -132,9 +149,9 @@ export default function Home() {
           <HorizontalScrollSkills />
 
           <div className="flex flex-col justify-start text-left text-gray-300 space-y-4 mt-10">
-            <p className="font-bold text-4xl sm:text-6xl mt-8">
-              Want to see what I’ve worked on?{" "}
-            </p>
+            <h2 className="font-bold text-4xl sm:text-6xl mt-8">
+              Software Engineering Experience and Projects
+            </h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-4">
               Scroll down and browse through my recent internship and projects.
             </p>
@@ -214,7 +231,7 @@ export default function Home() {
 
           <section aria-labelledby="projects">
             <h2 id="projects" className="font-bold text-4xl sm:text-6xl mt-12">
-              Projects
+              Full-Stack Software Engineering Projects
             </h2>
             <p className="text-xl mt-7">
               I learn best by building. Most of my projects are hosted on{" "}
@@ -222,7 +239,8 @@ export default function Home() {
                 Vercel
               </span>{" "}
               showcasing both the technologies I’m confident with and the new
-              ones I’m actively exploring.
+              ones I’m actively exploring. I'm looking to learn Cloudflare as
+              well.
             </p>
 
             <p className="text-xl mt-7">
@@ -246,7 +264,10 @@ export default function Home() {
                 focusable="false"
                 className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
               />
-              <p className="text-xl">Scroll to the right to see more. (Academic Projects toward the end)</p>
+              <p className="text-xl">
+                Scroll to the right to see more. (Academic Projects toward the
+                end)
+              </p>
             </div>
 
             <HorizontalScroll />
@@ -275,7 +296,8 @@ export default function Home() {
             </p>
             <p className="text-xl mt-5">
               I can't live without music. I like listening to Korean music
-              across many genres like ballads, k-pop, and krnb. And recently I've been listening to a lot of EDM as well. 
+              across many genres like ballads, k-pop, and krnb. And recently
+              I've been listening to a lot of EDM as well.
             </p>
             <p className="text-xl mt-5">
               Lately, I've been listening to a lot of{" "}

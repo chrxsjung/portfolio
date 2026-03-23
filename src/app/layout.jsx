@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
+  metadataBase: new URL("https://chrxsjung.me"),
   title: "Chris Jung | Portfolio",
   description:
     "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
@@ -31,6 +32,20 @@ export const metadata = {
     "UB Computer Science and Engineering Portfolio",
   ],
   authors: [{ name: "Chris Jung" }],
+  creator: "Chris Jung",
+  publisher: "Chris Jung",
+  category: "Technology",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     title: "Chris Jung | Portfolio",
     description:

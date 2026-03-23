@@ -20,9 +20,9 @@ export default function ProjectCard({
         className="rounded-2xl shadow-lg mb-8 w-full object-cover h-[200px] aspect-video"
       />
 
-      <h1 className="text-3xl md:text-4xl font-semibold text-center break-normal whitespace-normal">
+      <h3 className="text-3xl md:text-4xl font-semibold text-center break-normal whitespace-normal">
         {title}
-      </h1>
+      </h3>
 
       <div className="mt-4 min-h-[28px]">
         {status && (
