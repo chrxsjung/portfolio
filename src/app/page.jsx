@@ -38,6 +38,10 @@ export default function Home() {
             </p>
 
             <p className="text-xl mt-7">
+              as of right now, i'm learning spring boot will work on a project with it. 
+            </p>
+
+            <p className="text-xl mt-7">
               here are some of the technologies i've worked with:
             </p>
 
