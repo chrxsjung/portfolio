@@ -51,7 +51,7 @@ export default function HorizontalScrollProjects() {
         status="Completed"
         title="python web server (cse312)"
         description="definetly the best project i've done in college so far. i learned a lot about backend web development."
-        techStack="Python, MongoDB, Docker, FFmpeg, REST APIs"
+        techStack="Python, MongoDB, Docker, FFmpeg, Nginx, REST APIs"
         hideGithub
         hideLive
       />
