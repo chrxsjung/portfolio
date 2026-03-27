@@ -1,32 +1,36 @@
-"use client";
-import ScrollContainer from "react-indiana-drag-scroll";
 import SkillCard from "./SkillsCard";
+import HorizontalScrollCarousel from "./HorizontalScrollCarousel";
 
 export default function HorizontalScrollSkills() {
   return (
-    <ScrollContainer
-      hideScrollbars={false}
-      className="flex flex-row gap-12 mt-10 overflow-x-auto whitespace-nowrap pr-4 cursor-grab active:cursor-grabbing  "
-    >
+    <HorizontalScrollCarousel ariaLabel="Skills" stripClassName="mt-10 gap-10">
       <SkillCard
         title="Languages"
-        skills={["Python", "JavaScript", "TypeScript", "Java", "C", "OCaml"]}
+        skills={["python", "javascript", "typescript", "java", "c"]}
       />
       <SkillCard
         title="Frontend"
-        skills={["React", "Next.js", "Vite", "Tailwind CSS", "HTML", "CSS"]}
+        skills={["react", "next.js", "vite", "tailwind", "html", "css"]}
       />
       <SkillCard
         title="Backend"
-        skills={["Node.js", "Express.js", "Supabase", "PostgreSQL", "MongoDB", "REST APIs"]}
+        skills={[
+          "node.js",
+          "express.js",
+          "supabase",
+          "postgresql",
+          "mongodb",
+          "rest APIs",
+        ]}
       />
-
       <SkillCard
         title="Tools"
-        skills={["Git", "GitHub", "Vercel", "UNIX", "Figma", "Jira"]}
+        skills={["git", "github", "vercel", "docker", "unix", "figma", "jira"]}
       />
-            <SkillCard title="Exploring" skills={["MongoDB", "AWS", "Docker"]} />
-
-    </ScrollContainer>
+      <SkillCard
+        title="Exploring"
+        skills={["spring boot", "aws", "cloudflare"]}
+      />
+    </HorizontalScrollCarousel>
   );
 }

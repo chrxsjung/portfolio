@@ -1,84 +1,92 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const [hash, setHash] = useState(() =>
+    typeof window !== "undefined" ? window.location.hash : "",
+  );
+
+  useEffect(() => {
+    const sync = () => setHash(window.location.hash);
+    sync();
+    window.addEventListener("hashchange", sync);
+    return () => window.removeEventListener("hashchange", sync);
+  }, [pathname]);
+
+  const effectiveHash = pathname === "/" ? hash || "#intro" : "";
+
+  const navLinkClass = (hrefHash) =>
+    `navbar-link ${
+      pathname === "/" && effectiveHash === hrefHash
+        ? "text-blue-500"
+        : "text-white"
+    }`;
 
   return (
-    <nav className="text-white p-6 mt-2">
-      <div className="ml-2 flex justify-start items-center w-full px-[5%] md:px-[8%] lg:px-[12%]">
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
+    <nav className="text-white mt-2 pt-7 pb-4 md:pt-11 md:pb-8">
+      <div className="flex justify-between items-start w-full max-w-5xl mx-auto px-7 md:px-8">
+        <h1 className="font-normal text-xl sm:text-2xl md:text-3xl leading-none text-white">
+          christopher jung
+        </h1>
 
-        <div className="hidden md:flex gap-6 text-base font-medium ml-6 ">
-          <a href="#work" className="underline navbar-link">
-            work experience
-          </a>
-
-          <a href="#projects" className="underline navbar-link">
+        <div className="flex flex-col items-end gap-2 md:gap-3 text-base font-normal">
+          <Link href="/#work" className={navLinkClass("#work")}>
+            work
+          </Link>
+          <Link href="/#projects" className={navLinkClass("#projects")}>
             projects
-          </a>
-          <a href="#random" className="underline navbar-link">
-            about me
-          </a>
-
+          </Link>
+          <Link href="/#about" className={navLinkClass("#about")}>
+            about
+          </Link>
           <a
             href="/resume/ChristopherJung_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline navbar-link"
+            className="navbar-link text-white"
           >
             open resume
           </a>
+          <span className="text-right text-sm text-gray-400">
+            relevant links
+          </span>
+          <div
+            className="flex flex-row items-center justify-end gap-3"
+            role="group"
+            aria-label="linkedin, github, and email"
+          >
+            <a
+              href="https://www.linkedin.com/in/chrxsjung/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white transition-opacity hover:opacity-80"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-5 w-5" strokeWidth={2} />
+            </a>
+            <a
+              href="https://github.com/chrxsjung"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white transition-opacity hover:opacity-80"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" strokeWidth={2} />
+            </a>
+            <a
+              href="mailto:jungchristopher456@gmail.com"
+              className="text-white transition-opacity hover:opacity-80"
+              aria-label="Email"
+            >
+              <Mail className="h-5 w-5" strokeWidth={2} />
+            </a>
+          </div>
         </div>
       </div>
-
-      {isOpen && (
-        <div className="flex flex-col gap-4 mt-4 text-base font-medium md:hidden items-start pl-10">
-          {" "}
-          <a href="#work" className="underline navbar-link">
-            work experience
-          </a>
-          <a href="#projects" className="underline navbar-link">
-            projects
-          </a>
-          <a href="#random" className="underline navbar-link">
-            about me
-          </a>
-
-          <a
-            href="/resume/ChristopherJung_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline navbar-link"
-          >
-            open resume
-          </a>
-        </div>
-      )}
     </nav>
   );
 }

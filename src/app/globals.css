@@ -1,136 +1,31 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Tabular-Regular';
-  src: url('/fonts/Tabular-Regular.woff2') format('woff2'),
-    url('/fonts/Tabular-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Supreme-Regular';
-  src: url('/fonts/Supreme-Regular.woff2') format('woff2'),
-    url('/fonts/Supreme-Regular.woff') format('woff'),
-    url('/fonts/Supreme-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Supreme-Bold';
-  src: url('/fonts/Supreme-Bold.woff2') format('woff2'),
-    url('/fonts/Supreme-Bold.woff') format('woff'),
-    url('/fonts/Supreme-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Tabular-Bold';
-  src: url('/fonts/Tabular-Bold.woff2') format('woff2'),
-    url('/fonts/Tabular-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
-
-
 @media (max-width: 900px) {
   body {
-    background-image: none;
     background: linear-gradient(to bottom, #050505, #0d0d0d, #161616);
-    background-color: rgba(0, 0, 0, 0.5);
-
-  }
-
-}
-
-@media (max-width: 381px) {
-  .nameblock {
-    font-size: 1.7rem;
-  }
-
-}
-
-@media (max-width: 220px) {
-  .container-everything {
-    padding-left: 5px;
-    padding-right: 5px;
   }
 }
 
-
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 105%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
-
+.container-everything {
+  min-width: 0;
 }
 
-.typing {
-  width: 0;
-  /* start from zero to trigger animation */
-  font-family: 'Tabular-Regular', monospace;
-  /* or use Tailwind like text-4xl */
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.12em solid white;
-  animation:
-    typing 1.5s steps(14, end) forwards 0.2s,
-    /* short delay fixes Safari */
-    blink-caret 0.6s step-end infinite alternate;
+a,
+.underline {
+  text-underline-offset: 4px;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 14ch;
-  }
-}
-
-@keyframes blink-caret {
-
-  0%,
-  100% {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: white;
-  }
-}
-
-hi,
 .navbar-link:hover {
-  color: #FAFAF9;
-
-  background: linear-gradient(135deg,
-      #1e3a8a,
-      #3b82f6 30%,
-      #8b5cf6 70%,
-      #6b21a8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-h1 {
-  padding-bottom: 5px;
-
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #93c5fd;
 }
 
 ::-webkit-scrollbar {
@@ -146,15 +41,18 @@ h1 {
 html {
   scrollbar-color: #4a90e2 #0d0d0d;
   overscroll-behavior: none;
-  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Supreme-Regular';
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  background-image: url('/images/home-bg.jpg');
-  background-attachment: fixed;
+  font-family: "Radio Canada", monospace;
+  background-color: #0a0a0a;
   overscroll-behavior: none;
+}
+
+.horizontal-scroll-strip {
+  scrollbar-width: none;
+}
+
+.horizontal-scroll-strip::-webkit-scrollbar {
+  display: none;
 }

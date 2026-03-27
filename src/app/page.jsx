@@ -1,193 +1,61 @@
 import Navbar from "@/components/Navbar";
-import "./globals.css";
-import { Linkedin, Github, Mail } from "lucide-react";
-import { ArrowDown } from "lucide-react";
-import HorizontalScroll from "@/components/HorizontalScroll";
+import HorizontalScrollProjects from "@/components/HorizontalScrollProjects";
 import HorizontalScrollSkills from "@/components/HorizontalScrollSkills";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      {/* Structured data for better name/role/entity recognition */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Chris Jung",
-            alternateName: "Christopher Jung",
-            givenName: "Chris",
-            familyName: "Jung",
-            url: "https://chrxsjung.me",
-            jobTitle: "Aspiring Software Engineer",
-            affiliation: {
-              "@type": "CollegeOrUniversity",
-              name: "University at Buffalo",
-            },
-            sameAs: [
-              "https://www.linkedin.com/in/chrxsjung/",
-              "https://github.com/chrxsjung",
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Chris Jung Portfolio",
-            url: "https://chrxsjung.me",
-            inLanguage: "en-US",
-            about: {
-              "@type": "Person",
-              name: "Chris Jung",
-            },
-          }),
-        }}
-      />
-
-      <main className="flex-1 flex justify-start mb-12 w-full px-[5%] md:px-[8%] lg:px-[12%] ">
-        <div className="flex flex-col text-left text-gray-200 p-6 md:p-12 w-full md:max-w-[90%] lg:max-w-[80%] container-everything">
-          <h1 className="font-bold text-4xl sm:text-6xl typing nameblock">
-            Hi, I'm Chris Jung.
-          </h1>
-
-          <p className="text-xl mt-7">
-            I'm a junior majoring in Computer Science at the{" "}
-            <span className="text-blue-500">University at Buffalo</span> with a
-            strong passion for full-stack development. I'm constantly finding
-            ways to grow as a developer.
-          </p>
-
-          <p className="text-xl mt-5">
-            I learn best by doing, so I focus on building things that I’m
-            genuinely excited about and share them with others.
-          </p>
-
-          <p className="text-xl mt-5">
-            Recently, I’ve been expanding my backend skills by picking up{" "}
-            <span className="text-green-500">Spring Boot</span>,{" "}
-            <span className="text-orange-400">AWS</span>, and{" "}
-            <span className="text-sky-400">Docker</span>. Another thing I’m
-            working on is keeping my apps secure by researching and implementing
-            best practices like <span className="font-semibold">JWT</span>,{" "}
-            <span className="font-semibold">Authentication</span>,{" "}
-            <span className="font-semibold">Input sanitization</span>, and more.
-          </p>
-
-          <p className="text-xl mt-5">
-            Outside of coding, I enjoy watching k-dramas, listening to music,
-            following soccer, and playing video games like{" "}
-            <span className="text-red-500">Valorant</span>,{" "}
-            <span className="text-cyan-400">Fortnite</span>,{" "}
-            <span className="text-purple-500">Roblox</span>, and{" "}
-            <span className="text-green-500">FIFA</span>.
-          </p>
-
-          <p className="text-xl mt-5">
-            I'm currently seeking a software engineering internship for{" "}
-            <span className="text-red-400 font-semibold">Summer 2026</span>. If
-            you'd like to connect, or just want to chat, feel free to contact
-            me. I'd love to hear from you!
-          </p>
-
-          <div className="flex flex-row gap-4 justify-start mt-8 text-gray-100 items-center font-bold text-xl">
-            Connect with me on:
-            <a
-              href="https://www.linkedin.com/in/chrxsjung/"
-              className="text-white underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn profile of Chris Jung"
+      <main className="flex-1 mb-12 w-full">
+        <div className="flex flex-col text-left text-gray-200 w-full max-w-5xl mx-auto px-7 md:px-8 pt-1 pb-6 md:pt-2 md:pb-10 container-everything">
+          <section
+            id="intro"
+            aria-labelledby="intro-heading"
+            className="scroll-mt-24"
+          >
+            <h2
+              id="intro-heading"
+              className="font-bold text-2xl sm:text-3xl mt-4"
             >
-              <Linkedin className="w-8 h-8" />
-            </a>
-            <a
-              href="https://github.com/chrxsjung"
-              className="text-white underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub profile of Chris Jung"
-            >
-              <Github className="w-8 h-8" />
-            </a>
-            <a
-              href="mailto:jungchristopher456@gmail.com"
-              className="text-white underline"
-              aria-label="Send email to Chris Jung"
-            >
-              <Mail className="w-8 h-8" />
-            </a>
-          </div>
-
-          <div className="flex flex-row gap-2 justify-start items-center mt-8 text-gray-100">
-            <ArrowDown
-              aria-hidden="true"
-              focusable="false"
-              className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
-            />
-            <ArrowDown
-              aria-hidden="true"
-              focusable="false"
-              className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
-            />
-            <ArrowDown
-              aria-hidden="true"
-              focusable="false"
-              className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
-            />
-            <p className="text-xl">
-              Scroll to the right to see my tech skills and what I'm learning.
-            </p>
-          </div>
-
-          <HorizontalScrollSkills />
-
-          <div className="flex flex-col justify-start text-left text-gray-300 space-y-4 mt-10">
-            <h2 className="font-bold text-4xl sm:text-6xl mt-8">
-              Software Engineering Experience and Projects
+              hi!
             </h2>
-            <p className="text-lg md:text-xl text-gray-400 max-w-2xl mt-4">
-              Scroll down and browse through my recent internship and projects.
-            </p>
-            <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
-              <ArrowDown
-                aria-hidden="true"
-                focusable="false"
-                className="w-12 h-12 text-blue-500 animate-bounce mt-4 "
-              />
-              <ArrowDown
-                aria-hidden="true"
-                focusable="false"
-                className="w-12 h-12 text-blue-500 animate-bounce mt-4 "
-              />{" "}
-              <ArrowDown
-                aria-hidden="true"
-                focusable="false"
-                className="w-12 h-12 text-blue-500 animate-bounce mt-4 "
-              />
-            </div>
-          </div>
 
-          {/* SECTION LANDMARKS START */}
-          <section aria-labelledby="work">
-            <h2 id="work" className="font-bold text-4xl sm:text-6xl mt-12">
-              Work Experience
-            </h2>
             <p className="text-xl mt-7">
-              <span className="font-bold">Summer 2025</span> - I was a SWE
-              intern at <span className="text-orange-500">Barbarian</span>. I
-              was part of a 10-member intern team called the Horde, and we
-              worked on some really cool client projects together. 🔒
+              my name is chris, and i'm a junior at the{" "}
+              <a
+                href="https://www.buffalo.edu/"
+                className="text-blue-500 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                University at Buffalo
+              </a>{" "}
+              majoring in CS. i'm passionate about full-stack development, and
+              i'm constantly building / learning new things to improve as a
+              developer.
             </p>
 
-            <p className="text-xl mt-5">
-              I worked on the front end of the{" "}
+            <p className="text-xl mt-7">
+              here are some of the technologies i've worked with:
+            </p>
+
+            <HorizontalScrollSkills />
+          </section>
+
+          <section
+            id="work"
+            aria-labelledby="work-heading"
+            className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
+          >
+            <h2 id="work-heading" className="font-bold text-2xl sm:text-3xl">
+              work
+            </h2>
+
+
+            <p className="text-xl mt-7">
+              <span className="font-bold">Summer 2025</span> - SWE intern at{" "}
               <a
                 href="https://wearebarbarian.com/"
                 className="text-white underline"
@@ -196,111 +64,80 @@ export default function Home() {
               >
                 <span className="text-orange-500">Barbarian</span>
               </a>{" "}
-              website using{" "}
-              <span className="text-orange-500 font-semibold">HTML</span>,{" "}
-              <span className="text-blue-500 font-semibold">CSS</span>, and{" "}
-              <span className="text-yellow-400 font-semibold">JavaScript</span>.
             </p>
 
             <p className="text-xl mt-5">
-              🔒 I also developed and shipped 5+ pages and over 10+ features
-              from scratch for a new AI powered internal tool to help streamline
-              work across the company. I used{" "}
-              <span className="text-blue-500 font-semibold">TypeScript</span>,{" "}
-              <span className="text-sky-400 font-semibold">React</span>,{" "}
-              <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
-                Next.js
-              </span>
-              ,{" "}
-              <span className="text-cyan-400 font-semibold">Tailwind CSS</span>{" "}
-              and <span className="text-green-500 font-semibold">Supabase</span>
-              .
-            </p>
-
-            <p className="text-xl mt-5">
-              Overall, the experience helped me grow quickly. I worked with
-              insanely talented people, learned agile workflows, picked up new
-              technologies fast, and contributed to real, meaningful projects.
-            </p>
-
-            <p className="text-xl mt-5">
-              I also made lifelong friends and had a blast during the
-              internship. 10/10 experience.
+              - i mainly worked on an ai powered internal tool using TypeScript,
+              React, Next.js, and Supabase. <br />- i also helped maintain and
+              improve the company website using HTML, CSS, and JavaScript.
             </p>
           </section>
 
-          <section aria-labelledby="projects">
-            <h2 id="projects" className="font-bold text-4xl sm:text-6xl mt-12">
-              Full-Stack Software Engineering Projects
+          <section
+            id="projects"
+            aria-labelledby="projects-heading"
+            className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
+          >
+            <h2
+              id="projects-heading"
+              className="font-bold text-2xl sm:text-3xl"
+            >
+              projects
             </h2>
-            <p className="text-xl mt-7">
-              I learn best by building. Most of my projects are hosted on{" "}
-              <span className="bg-zinc-400 text-black font-semibold px-1 rounded">
-                Vercel
-              </span>{" "}
-              showcasing both the technologies I’m confident with and the new
-              ones I’m actively exploring. I'm looking to learn Cloudflare as
-              well.
-            </p>
 
             <p className="text-xl mt-7">
-              If you spot any security issues in my projects, feel free to point
-              them out. I’m still learning and want to get better at it.
+              i learn best by building, and like to build projects that interest
+              me.
             </p>
 
-            <div className="flex flex-row gap-2 justify-start items-center mt-4 text-gray-100">
+            <div className="flex flex-row flex-wrap gap-2 items-center mt-4 text-gray-300 text-sm">
               <ArrowDown
                 aria-hidden="true"
-                focusable="false"
-                className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
+                className="w-5 h-5 text-blue-400 -rotate-90 shrink-0"
               />
-              <ArrowDown
-                aria-hidden="true"
-                focusable="false"
-                className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
-              />
-              <ArrowDown
-                aria-hidden="true"
-                focusable="false"
-                className="w-12 h-12 text-blue-500 animate-bounce -rotate-90"
-              />
-              <p className="text-xl">
-                Scroll to the right to see more. (Academic Projects toward the
-                end)
-              </p>
+              <span>academic work toward the end</span>
             </div>
 
-            <HorizontalScroll />
+            <HorizontalScrollProjects />
           </section>
 
-          <section aria-labelledby="random">
-            <h2 id="random" className="font-bold text-4xl sm:text-6xl mt-12">
-              get to know me
+          <section
+            id="about"
+            aria-labelledby="about-heading"
+            className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
+          >
+            <h2 id="about-heading" className="font-bold text-2xl sm:text-3xl">
+              more about me
             </h2>
+
             <p className="text-xl mt-10">
-              I watch all kinds of shows from k-dramas to anime to regular
-              series. On the top of my head, my favorites are{" "}
-              <span className="italic font-bold">Reply 1988</span>{" "}
-              <span className="text-red-500 font-bold">(a MUST watch)</span>,{" "}
-              <span className="italic font-bold">The Flash</span>,{" "}
+              outside of coding, i like watching tv, exploring new music,
+              following soccer, and playing video games like valorant, fortnite,
+              roblox, and fifa.
+            </p>
+
+            <p className="text-xl mt-5">
+              my favorite tv shows are{" "}
+              <span className="italic font-bold">Reply 1988</span>,{" "}
+              <span className="italic font-bold">The Flash</span>, and{" "}
               <span className="italic font-bold">
                 Avatar: The Last Airbender
               </span>
-              , and <span className="italic font-bold">Weak Hero 1 & 2</span>.
             </p>
 
             <p className="text-xl mt-5">
-              I'm also a huge fan of soccer and have been since I was a kid. I
-              follow basically all major leagues and tournaments. I'm a big fan
-              of the Korean GOAT, Son Heung-Min.
+              i love soccer and follow most major leagues and tournaments. i'm a
+              big fan of the korean GOAT, Son Heung-Min.
             </p>
+
             <p className="text-xl mt-5">
-              I can't live without music. I like listening to Korean music
-              across many genres like ballads, k-pop, and krnb. And recently
-              I've been listening to a lot of EDM as well.
+              i can't live without music. i like listening to korean music
+              across many genres like ballads, k-pop, and krnb. and recently
+              i've been listening to a lot of EDM and house music.
             </p>
+
             <p className="text-xl mt-5">
-              Lately, I've been listening to a lot of{" "}
+              my favorite artist is{" "}
               <span className="text-pink-500">
                 <a
                   href="https://open.spotify.com/artist/2MtHuR0W2idZdF7x4wddqq"
@@ -310,8 +147,8 @@ export default function Home() {
                 >
                   Giriboy
                 </a>
-              </span>{" "}
-              (you're welcome), and{" "}
+              </span>
+              , and{" "}
               <span className="text-gray-400">
                 <a
                   href="https://www.youtube.com/watch?v=iRNxBLK_PVk"
@@ -333,69 +170,55 @@ export default function Home() {
                   Cosmic Boy
                 </a>
               </span>{" "}
-              has been on repeat. Want to see your own stats? Check out my{" "}
-              <a
-                href="https://spotify-stats-v2-inky.vercel.app/"
-                className="underline text-green-500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Spotify Stats App
-              </a>{" "}
-              (shameless plug).
-            </p>
-            <p className="text-xl mt-5">
-              Video games have always been a huge part of my life. Some of my
-              best memories come from late-night gaming and tournaments with
-              friends.
-            </p>
-
-            <p className="text-xl mt-5">
-              Recently, I’ve gotten into golf. I'm absolutely terrible at it,
-              but at least the walk’s nice. So on the weekends, when I'm not
-              gaming or coding, you'll probably find me on the golf course.
+              has been on repeat.
             </p>
           </section>
 
-          <section aria-labelledby="contact">
-            <h2 id="contact" className="font-bold text-4xl sm:text-6xl mt-12 ">
-              Contact Me
+          <section
+            id="contact"
+            aria-labelledby="contact-heading"
+            className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
+          >
+            <h2 id="contact-heading" className="font-bold text-2xl sm:text-3xl">
+              contact
             </h2>
-            <p className="text-xl mt-7">
-              Thanks for stopping by. If you're curious about my work, projects,
-              or just want to connect, feel free to reach out on LinkedIn or
-              shoot me an email!
-            </p>
 
-            <div className="flex flex-row gap-4 justify-start mt-8 text-gray-100">
-              <a
-                href="https://www.linkedin.com/in/chrxsjung/"
-                className="text-white underline"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn profile of Chris Jung"
-              >
-                <Linkedin className="w-8 h-8" />
-              </a>
-              <a
-                href="https://github.com/chrxsjung"
-                className="text-white underline"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub profile of Chris Jung"
-              >
-                <Github className="w-8 h-8" />
-              </a>
-              <a
-                href="mailto:jungchristopher456@gmail.com"
-                className="text-white underline"
-                aria-label="Send email to Chris Jung"
-              >
-                <Mail className="w-8 h-8" />
-              </a>
+            <div className="text-xl mt-8 space-y-4 text-gray-200">
+              <p>
+                thanks for stopping by. if you're curious about my work,
+                projects, or just want to connect, feel free to reach out! i'm
+                always looking for new opportunities to learn and grow.
+              </p>
+              <p className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                <strong className="shrink-0">connect with me at:</strong>
+                <a
+                  href="https://www.linkedin.com/in/chrxsjung/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:opacity-80 transition-opacity"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-8 h-8" />
+                </a>
+                <a
+                  href="https://github.com/chrxsjung"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:opacity-80 transition-opacity"
+                  aria-label="GitHub"
+                >
+                  <Github className="w-8 h-8" />
+                </a>
+                <a
+                  href="mailto:jungchristopher456@gmail.com"
+                  className="text-white hover:opacity-80 transition-opacity"
+                  aria-label="Email"
+                >
+                  <Mail className="w-8 h-8" />
+                </a>
+              </p>
             </div>
           </section>
-          {/* SECTION LANDMARKS END */}
         </div>
       </main>
     </div>

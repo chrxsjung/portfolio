@@ -9,27 +9,13 @@ export const metadata = {
   description:
     "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
   keywords: [
-    "Portfolio",
     "Chris Jung",
-    "Christopher Jung",
-    "Software Engineer",
-    "Computer Science",
+    "portfolio",
+    "software engineer",
     "University at Buffalo",
-    "Full Stack Developer",
-    "Frontend Developer",
-    "Backend Developer",
     "React",
     "Next.js",
-    "Tailwind CSS",
-    "Supabase",
-    "Portfolio Website",
-    "Personal Website",
-    "Website",
-    "UB",
-    "UB CSE",
-    "UB Computer Science",
-    "UB Computer Science and Engineering",
-    "UB Computer Science and Engineering Portfolio",
+    "full stack",
   ],
   authors: [{ name: "Chris Jung" }],
   creator: "Chris Jung",
@@ -78,6 +64,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         {children}
         <Analytics />
