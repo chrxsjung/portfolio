@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import { Radio_Canada } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -61,22 +62,17 @@ export const metadata = {
   },
 };
 
+const radioCanada = Radio_Canada({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+      <body className={radioCanada.className}>
         {children}
         <Analytics />
         <SpeedInsights />
