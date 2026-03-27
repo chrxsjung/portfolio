@@ -37,8 +37,16 @@ export default function HorizontalScrollCarousel({
   const scrollByDir = (dir) => {
     const el = scrollerRef.current;
     if (!el) return;
-    const step = Math.min(Math.round(el.clientWidth * 0.75), 420);
-    el.scrollBy({ left: dir * step, behavior: "smooth" });
+    const cards = [...el.children];
+    const { scrollLeft } = el;
+
+    if (dir === 1) {
+      const next = cards.find((card) => card.offsetLeft > scrollLeft + 2);
+      if (next) el.scrollTo({ left: next.offsetLeft, behavior: "smooth" });
+    } else {
+      const prev = cards.findLast((card) => card.offsetLeft < scrollLeft - 2);
+      if (prev) el.scrollTo({ left: prev.offsetLeft, behavior: "smooth" });
+    }
   };
 
   const arrowBtnClass =
@@ -50,7 +58,7 @@ export default function HorizontalScrollCarousel({
         ref={scrollerRef}
         role="region"
         aria-label={ariaLabel}
-        className={`horizontal-scroll-strip flex min-w-0 w-full flex-row flex-nowrap items-stretch overflow-x-auto overflow-y-hidden overscroll-x-contain pb-0 [-webkit-overflow-scrolling:touch] touch-pan-x ${stripClassName}`}
+        className={`horizontal-scroll-strip relative flex min-w-0 w-full flex-row flex-nowrap items-stretch overflow-x-auto overflow-y-hidden overscroll-x-contain snap-x snap-mandatory pb-0 touch-manipulation ${stripClassName}`}
       >
         {children}
       </div>
@@ -58,7 +66,7 @@ export default function HorizontalScrollCarousel({
       <div
         className={
           tightArrows
-            ? "-mt-6 flex w-full flex-row items-center justify-center gap-4 sm:gap-6 pt-0"
+            ? "relative z-10 -mt-6 flex w-full flex-row items-center justify-center gap-4 sm:gap-6 pt-0"
             : "flex w-full flex-row items-center justify-center gap-4 sm:gap-6"
         }
         role="group"

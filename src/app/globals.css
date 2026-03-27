@@ -53,6 +53,10 @@ body {
   scrollbar-width: none;
 }
 
+.horizontal-scroll-strip > * {
+  scroll-snap-align: start;
+}
+
 .horizontal-scroll-strip::-webkit-scrollbar {
   display: none;
 }
