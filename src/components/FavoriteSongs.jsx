@@ -4,12 +4,6 @@ export default function FavoriteSongs() {
   return (
     <div className="mt-5 flex flex-wrap gap-4">
       <SongCard
-        title="ROB LUCCI"
-        artist="OKASHII"
-        url="https://www.youtube.com/watch?v=LtaVzhVZFC8"
-      />
-
-      <SongCard
         title="maybe baby"
         artist="Effie"
         url="https://www.youtube.com/watch?v=mY29OplGMkY"
@@ -43,6 +37,12 @@ export default function FavoriteSongs() {
         title="STYLE"
         artist="Hearts2Hearts"
         url="https://www.youtube.com/watch?v=n7kFRxFIPrI"
+      />
+
+      <SongCard
+        title="ROB LUCCI"
+        artist="OKASHII"
+        url="https://www.youtube.com/watch?v=LtaVzhVZFC8"
       />
 
       <SongCard
