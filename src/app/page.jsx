@@ -161,7 +161,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
               >
-                <span>STYLE</span>
+                STYLE
               </a>
               ,{" "}
               <a
@@ -170,7 +170,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
               >
-                <span>maybe baby</span>
+                maybe baby
               </a>
               ,{" "}
               <a
@@ -179,7 +179,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
               >
-                <span>SKY PASS</span>
+                SKY PASS
               </a>
               ,{" "}
               <a
@@ -188,7 +188,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
               >
-                <span>PUBLIC ENEMIES</span>
+                PUBLIC ENEMIES
               </a>
               , and{" "}
               <a
@@ -197,7 +197,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
               >
-                <span>Ms. Menhera</span>
+                Ms. Menhera
               </a>
               .
             </p>

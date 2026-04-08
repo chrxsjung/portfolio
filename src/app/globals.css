@@ -48,10 +48,6 @@ body {
   overscroll-behavior: none;
 }
 
-.font-roboto {
-  font-family: var(--font-roboto), sans-serif;
-}
-
 .horizontal-scroll-strip {
   scrollbar-width: none;
 }

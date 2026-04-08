@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ProjectCard({
   title,
   description,
@@ -11,9 +13,13 @@ export default function ProjectCard({
 }) {
   return (
     <div className="mb-0 flex h-[544px] min-w-[296px] max-w-[320px] shrink-0 flex-col items-center text-white">
-      <img
+      <Image
         src={image}
         alt={`${title} preview`}
+        width={640}
+        height={360}
+        sizes="(max-width: 768px) 296px, 320px"
+        quality={75}
         className="mb-6 h-[168px] w-full rounded-xl object-cover aspect-video shadow-lg"
       />
 
@@ -26,7 +32,7 @@ export default function ProjectCard({
           <div
             className={`rounded-full px-3 py-0.5 text-[13px] leading-snug ${
               status === "Completed"
-                ? "bg-green-700 text-green-200"
+                ? "bg-green-400 text-green-950"
                 : "bg-yellow-300 text-yellow-950"
             }`}
           >
