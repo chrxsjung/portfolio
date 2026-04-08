@@ -35,9 +35,9 @@ export default function Home() {
               >
                 University at Buffalo
               </a>{" "}
-              majoring in Computer Science. I'm passionate about full-stack development, and
-              constantly building / learning new things to improve as a
-              developer.
+              majoring in Computer Science. I'm passionate about full-stack
+              development, and constantly building / learning new things to
+              improve as a developer.
             </p>
 
             <p className="text-xl mt-7">
@@ -102,9 +102,9 @@ export default function Home() {
               About Me
             </h2>
             <p className="text-xl mt-10">
-              I spend my free time watching tv shows (like k-dramas), exploring new music,
-              following soccer, and playing games like Valorant, Fortnite,
-              Roblox, and FIFA.
+              I spend my free time watching tv shows (like k-dramas), exploring
+              new music, following soccer, and playing games like Valorant,
+              Fortnite, Roblox, and FIFA.
             </p>
             <p className="text-xl mt-5">
               My favorite tv shows are{" "}
@@ -118,7 +118,6 @@ export default function Home() {
             <p className="text-xl mt-5">
               I love soccer and follow most major leagues and tournaments. I'm a
               big fan of the Korean GOAT, Son Heung-Min.
-             
             </p>
             <p className="text-xl mt-5">
               I can't live without music. I like listening to korean music
@@ -126,11 +125,12 @@ export default function Home() {
               been exploring more EDM and jazz.
             </p>
 
-
-            <p className="text-xl mt-5">current favorite artists:</p>
+            {/*
+              <p className="text-xl mt-5">current favorite artists:</p>
             <FavoriteArtists />
             <p className="text-xl mt-5">on repeat:</p>
             <FavoriteSongs />
+            */}
           </section>
 
           <section
