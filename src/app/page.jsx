@@ -2,8 +2,6 @@ import Navbar from "@/components/Navbar";
 import HorizontalScrollProjects from "@/components/HorizontalScrollProjects";
 import HorizontalScrollSkills from "@/components/HorizontalScrollSkills";
 import VerticalInternshipExperiences from "@/components/VerticalInternshipExperiences";
-import FavoriteArtists from "@/components/FavoriteArtists";
-import FavoriteSongs from "@/components/FavoriteSongs";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
@@ -125,12 +123,84 @@ export default function Home() {
               been exploring more EDM and jazz.
             </p>
 
-            {/*
-              <p className="text-xl mt-5">current favorite artists:</p>
-            <FavoriteArtists />
-            <p className="text-xl mt-5">on repeat:</p>
-            <FavoriteSongs />
-            */}
+            <p className="text-xl mt-5">
+              current favorite artists:{" "}
+              <a
+                href="https://www.youtube.com/@GIRIBOYWORLD/releases"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-red-500 hover:text-red-200"
+              >
+                Giriboy
+              </a>
+              ,{" "}
+              <a
+                href="https://www.youtube.com/@KCTHECOMPANY/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-red-500 hover:text-red-200"
+              >
+                KC (label)
+              </a>
+              , and{" "}
+              <a
+                href="https://www.youtube.com/@hearts2hearts.official/releases"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-red-500 hover:text-red-200"
+              >
+                Hearts2Hearts
+              </a>
+              .
+            </p>
+            <p className="text-xl mt-5">
+              on repeat:{" "}
+              <a
+                href="https://www.youtube.com/watch?v=n7kFRxFIPrI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
+              >
+                <span>STYLE</span>
+              </a>
+              ,{" "}
+              <a
+                href="https://www.youtube.com/watch?v=mY29OplGMkY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
+              >
+                <span>maybe baby</span>
+              </a>
+              ,{" "}
+              <a
+                href="https://www.youtube.com/watch?v=uvNbnNVMyIA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
+              >
+                <span>SKY PASS</span>
+              </a>
+              ,{" "}
+              <a
+                href="https://www.youtube.com/watch?v=4R4CG2UUNhA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
+              >
+                <span>PUBLIC ENEMIES</span>
+              </a>
+              , and{" "}
+              <a
+                href="https://www.youtube.com/watch?v=_Bp6g2JIZg4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
+              >
+                <span>Ms. Menhera</span>
+              </a>
+              .
+            </p>
           </section>
 
           <section

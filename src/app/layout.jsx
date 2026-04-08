@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   metadataBase: new URL("https://chrxsjung.me"),
-  title: "Chris Jung | Portfolio",
+  title: "Chris Jung",
   description:
     "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
   keywords: [
@@ -14,9 +14,11 @@ export const metadata = {
     "portfolio",
     "software engineer",
     "University at Buffalo",
+    "UB",
     "React",
     "Next.js",
     "full stack",
+    "Christopher Jung",
   ],
   authors: [{ name: "Chris Jung" }],
   creator: "Chris Jung",
