@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { Radio_Canada } from "next/font/google";
+import { Radio_Canada, Roboto } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -69,10 +69,17 @@ const radioCanada = Radio_Canada({
   style: ["normal", "italic"],
 });
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={radioCanada.className}>
+      <body className={`${radioCanada.className} ${roboto.variable}`}>
         {children}
         <Analytics />
         <SpeedInsights />

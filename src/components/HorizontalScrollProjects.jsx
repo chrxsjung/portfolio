@@ -14,7 +14,7 @@ export default function HorizontalScrollProjects() {
         title="Internship Hub"
         liveUrl="https://c-internship-tools.vercel.app/"
         githubUrl="https://github.com/chrxsjung/internship_hub"
-        description="all the tools you could possibly need for your internship search"
+        description="all the tools you could possibly need for your internship search (resume, project ideas, etc.)"
         techStack="JavaScript, React, Next.js, Tailwind CSS, Supabase, Supabase Auth, Groq"
       />
       <ProjectCard
@@ -70,7 +70,7 @@ export default function HorizontalScrollProjects() {
         status="Completed"
         title="Interpreter Project (cse305)"
         description={
-          "built my own interpreter in OCaml for a custom stack-based bytecode language. part 3 of the project was where noobs turn into pros."
+          "built my own interpreter in OCaml for a custom stack-based bytecode language. pretty cool project!"
         }
         techStack="OCaml"
         hideGithub

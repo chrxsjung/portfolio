@@ -27,7 +27,7 @@ export default function ProjectCard({
             className={`rounded-full px-3 py-0.5 text-[13px] leading-snug ${
               status === "Completed"
                 ? "bg-green-700 text-green-200"
-                : "bg-yellow-700 text-yellow-200"
+                : "bg-yellow-300 text-yellow-950"
             }`}
           >
             {status}

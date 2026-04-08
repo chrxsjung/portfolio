@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import HorizontalScrollProjects from "@/components/HorizontalScrollProjects";
 import HorizontalScrollSkills from "@/components/HorizontalScrollSkills";
+import VerticalInternshipExperiences from "@/components/VerticalInternshipExperiences";
+import FavoriteArtists from "@/components/FavoriteArtists";
+import FavoriteSongs from "@/components/FavoriteSongs";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
@@ -23,7 +26,7 @@ export default function Home() {
             </h2>
 
             <p className="text-xl mt-7">
-              my name is chris, and i'm a junior at the{" "}
+              My name is Chris, and I'm a junior at the{" "}
               <a
                 href="https://www.buffalo.edu/"
                 className="text-blue-500 underline"
@@ -32,17 +35,19 @@ export default function Home() {
               >
                 University at Buffalo
               </a>{" "}
-              majoring in CS. i'm passionate about full-stack development, and
-              i'm constantly building / learning new things to improve as a
+              majoring in CS. I'm passionate about full-stack development, and
+              constantly building / learning new things to improve as a
               developer.
             </p>
 
             <p className="text-xl mt-7">
-              as of right now, i'm learning spring boot by building a project with it.
+              Right now, I'm deep diving into{" "}
+              <span className="font-bold text-green-500">Spring Boot</span> and{" "}
+              <span className="font-bold text-orange-400">AWS</span>.
             </p>
 
             <p className="text-xl mt-7">
-              here are some of the technologies i've worked with:
+              Here are some of the technologies I've worked with:
             </p>
 
             <HorizontalScrollSkills />
@@ -54,27 +59,10 @@ export default function Home() {
             className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
           >
             <h2 id="work-heading" className="font-bold text-2xl sm:text-3xl">
-              work
+              Work Experience
             </h2>
 
-
-            <p className="text-xl mt-7">
-              <span className="font-bold">Summer 2025</span> - SWE intern at{" "}
-              <a
-                href="https://wearebarbarian.com/"
-                className="text-white underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="text-orange-500">Barbarian</span>
-              </a>{" "}
-            </p>
-
-            <p className="text-xl mt-5">
-              - i mainly worked on an ai powered internal tool using TypeScript,
-              React, Next.js, and Supabase. <br />- i also helped maintain and
-              improve the company website using HTML, CSS, and JavaScript.
-            </p>
+            <VerticalInternshipExperiences />
           </section>
 
           <section
@@ -86,11 +74,11 @@ export default function Home() {
               id="projects-heading"
               className="font-bold text-2xl sm:text-3xl"
             >
-              projects
+              Projects
             </h2>
 
             <p className="text-xl mt-7">
-              i learn best by building, and like to build projects that interest
+              I learn best by building, and like to build projects that interest
               me.
             </p>
 
@@ -111,71 +99,38 @@ export default function Home() {
             className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
           >
             <h2 id="about-heading" className="font-bold text-2xl sm:text-3xl">
-              more about me
+              About Me
             </h2>
-
             <p className="text-xl mt-10">
-              outside of coding, i like watching tv, exploring new music,
-              following soccer, and playing video games like valorant, fortnite,
-              roblox, and fifa.
+              I spend my free time watching tv shows (like k-dramas), exploring new music,
+              following soccer, and playing games like Valorant, Fortnite,
+              Roblox, and FIFA.
             </p>
-
             <p className="text-xl mt-5">
-              my favorite tv shows are{" "}
+              My favorite tv shows are{" "}
               <span className="italic font-bold">Reply 1988</span>,{" "}
               <span className="italic font-bold">The Flash</span>, and{" "}
               <span className="italic font-bold">
                 Avatar: The Last Airbender
               </span>
+              .
+            </p>
+            <p className="text-xl mt-5">
+              I love soccer and follow most major leagues and tournaments. I'm a
+              big fan of the Korean GOAT, Son Heung-Min.
+             
+            </p>
+            <p className="text-xl mt-5">
+              I can't live without music. I like listening to korean music
+              across many genres like ballads, k-pop, and krnb. Recently I've
+              been exploring more EDM and jazz.
             </p>
 
-            <p className="text-xl mt-5">
-              i love soccer and follow most major leagues and tournaments. i'm a
-              big fan of the korean GOAT, Son Heung-Min.
-            </p>
 
-            <p className="text-xl mt-5">
-              i can't live without music. i like listening to korean music
-              across many genres like ballads, k-pop, and krnb. and recently
-              i've been listening to a lot of EDM and house music.
-            </p>
-
-            <p className="text-xl mt-5">
-              my favorite artist is{" "}
-              <span className="text-pink-500">
-                <a
-                  href="https://open.spotify.com/artist/2MtHuR0W2idZdF7x4wddqq"
-                  className="underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Giriboy
-                </a>
-              </span>
-              , and{" "}
-              <span className="text-gray-400">
-                <a
-                  href="https://www.youtube.com/watch?v=iRNxBLK_PVk"
-                  className="underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Alone (Feat. SOLE, Dvwn)
-                </a>
-              </span>{" "}
-              by{" "}
-              <span className="text-cyan-500">
-                <a
-                  href="https://open.spotify.com/artist/305pg6Bs6Mz9Tm2zK66psY"
-                  className="underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Cosmic Boy
-                </a>
-              </span>{" "}
-              has been on repeat.
-            </p>
+            <p className="text-xl mt-5">current favorite artists:</p>
+            <FavoriteArtists />
+            <p className="text-xl mt-5">on repeat:</p>
+            <FavoriteSongs />
           </section>
 
           <section
@@ -184,17 +139,17 @@ export default function Home() {
             className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
           >
             <h2 id="contact-heading" className="font-bold text-2xl sm:text-3xl">
-              contact
+              Contact
             </h2>
 
             <div className="text-xl mt-8 space-y-4 text-gray-200">
               <p>
-                thanks for stopping by. if you're curious about my work,
-                projects, or just want to connect, feel free to reach out! i'm
+                Thanks for stopping by. If you're curious about my work,
+                projects, or just want to connect, feel free to reach out! I'm
                 always looking for new opportunities to learn and grow.
               </p>
               <p className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                <strong className="shrink-0">connect with me at:</strong>
+                <strong className="shrink-0">find me on:</strong>
                 <a
                   href="https://www.linkedin.com/in/chrxsjung/"
                   target="_blank"

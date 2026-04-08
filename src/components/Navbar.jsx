@@ -6,9 +6,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [hash, setHash] = useState(() =>
-    typeof window !== "undefined" ? window.location.hash : "",
-  );
+  const [hash, setHash] = useState("");
 
   useEffect(() => {
     const sync = () => setHash(window.location.hash);
@@ -66,7 +64,7 @@ export default function Navbar() {
               className="text-white transition-opacity hover:opacity-80"
               aria-label="LinkedIn"
             >
-              <Linkedin className="h-5 w-5" strokeWidth={2} />
+              <Linkedin className="h-6 w-6" strokeWidth={2} />
             </a>
             <a
               href="https://github.com/chrxsjung"
@@ -75,14 +73,14 @@ export default function Navbar() {
               className="text-white transition-opacity hover:opacity-80"
               aria-label="GitHub"
             >
-              <Github className="h-5 w-5" strokeWidth={2} />
+              <Github className="h-6 w-6" strokeWidth={2} />
             </a>
             <a
               href="mailto:jungchristopher456@gmail.com"
               className="text-white transition-opacity hover:opacity-80"
               aria-label="Email"
             >
-              <Mail className="h-5 w-5" strokeWidth={2} />
+              <Mail className="h-6 w-6" strokeWidth={2} />
             </a>
           </div>
         </div>
