@@ -35,7 +35,7 @@ export default function Home() {
               >
                 University at Buffalo
               </a>{" "}
-              majoring in CS. I'm passionate about full-stack development, and
+              majoring in Computer Science. I'm passionate about full-stack development, and
               constantly building / learning new things to improve as a
               developer.
             </p>
