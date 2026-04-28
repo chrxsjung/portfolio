@@ -120,7 +120,7 @@ export default function Home() {
             <p className="text-xl mt-5">
               I can't live without music. I like listening to korean music
               across many genres like ballads, k-pop, and krnb. Recently I've
-              been exploring more EDM and jazz.
+              been exploring more EDM and Jazz.
             </p>
 
             <p className="text-xl mt-5">
@@ -154,7 +154,7 @@ export default function Home() {
               .
             </p>
             <p className="text-xl mt-5">
-              on repeat:{" "}
+              fire songs / performances:{" "}
               <a
                 href="https://www.youtube.com/watch?v=n7kFRxFIPrI"
                 target="_blank"
