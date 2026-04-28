@@ -10,7 +10,7 @@ export default function HorizontalScrollSkills() {
       />
       <SkillCard
         title="Frontend"
-        skills={["React", "Next.js", "Vite", "Tailwind", "HTML", "CSS"]}
+        skills={["HCI Principles", "React", "Next.js", "Vite", "Tailwind", "HTML", "CSS"]}
       />
       <SkillCard
         title="Backend"
