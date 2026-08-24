@@ -3,6 +3,7 @@ export default function InternshipCard({
   role,
   company,
   companyUrl,
+  companyColor = "text-orange-400",
   highlights,
 }) {
   return (
@@ -12,7 +13,7 @@ export default function InternshipCard({
         <span className="text-white">{role} at</span>{" "}
         <a
           href={companyUrl}
-          className="text-orange-400 underline"
+          className={`${companyColor} underline`}
           target="_blank"
           rel="noopener noreferrer"
         >

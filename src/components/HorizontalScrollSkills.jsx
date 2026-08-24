@@ -6,30 +6,37 @@ export default function HorizontalScrollSkills() {
     <HorizontalScrollCarousel ariaLabel="Skills" stripClassName="mt-10 gap-10">
       <SkillCard
         title="Languages"
-        skills={["Python", "JavaScript", "TypeScript", "Java", "C"]}
+        skills={["Python", "Java", "TypeScript", "JavaScript"]}
       />
       <SkillCard
         title="Frontend"
-        skills={["HCI Principles", "React", "Next.js", "Vite", "Tailwind", "HTML", "CSS"]}
+        skills={["React", "Next.js", "Tailwind", "Vite"]}
       />
       <SkillCard
         title="Backend"
         skills={[
           "Node.js",
-          "Express.js",
-          "Supabase",
+          "Spring Boot",
+          "Azure",
           "PostgreSQL",
           "MongoDB",
-          "REST APIs",
+          "Supabase",
         ]}
       />
       <SkillCard
-        title="Tools"
-        skills={["Git", "GitHub", "Vercel", "Docker", "UNIX", "Figma", "Jira"]}
+        title="Testing"
+        skills={["JUnit", "Vitest", "Playwright", "Pact"]}
       />
       <SkillCard
-        title="Exploring"
-        skills={["Spring Boot", "AWS", "Cloudflare"]}
+        title="Tools"
+        skills={[
+          "Git",
+          "GitHub Actions",
+          "Docker",
+          "Terraform",
+          "Maven",
+          "Gradle",
+        ]}
       />
     </HorizontalScrollCarousel>
   );

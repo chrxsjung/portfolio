@@ -18,13 +18,13 @@ export default function Home() {
           >
             <h2
               id="intro-heading"
-              className="font-bold text-2xl sm:text-3xl mt-4"
+              className="font-semibold text-2xl sm:text-3xl mt-4"
             >
-              hi!
+              Hi!
             </h2>
 
             <p className="text-xl mt-7">
-              My name is Chris, and I'm a junior at the{" "}
+              My name is Chris, and I'm a senior at the{" "}
               <a
                 href="https://www.buffalo.edu/"
                 className="text-blue-500 underline"
@@ -56,7 +56,7 @@ export default function Home() {
             aria-labelledby="work-heading"
             className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
           >
-            <h2 id="work-heading" className="font-bold text-2xl sm:text-3xl">
+            <h2 id="work-heading" className="font-semibold text-2xl sm:text-3xl">
               Work Experience
             </h2>
 
@@ -70,7 +70,7 @@ export default function Home() {
           >
             <h2
               id="projects-heading"
-              className="font-bold text-2xl sm:text-3xl"
+              className="font-semibold text-2xl sm:text-3xl"
             >
               Projects
             </h2>
@@ -96,13 +96,14 @@ export default function Home() {
             aria-labelledby="about-heading"
             className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
           >
-            <h2 id="about-heading" className="font-bold text-2xl sm:text-3xl">
+            <h2 id="about-heading" className="font-semibold text-2xl sm:text-3xl">
               About Me
             </h2>
             <p className="text-xl mt-10">
               I spend my free time watching tv shows (like k-dramas), exploring
               new music, following soccer, and playing games like Valorant,
-              Fortnite, Roblox, and FIFA.
+              Fortnite, Roblox, and FIFA. 
+              Recently, I've picked up playing the guitar. 
             </p>
             <p className="text-xl mt-5">
               My favorite tv shows are{" "}
@@ -154,7 +155,7 @@ export default function Home() {
               .
             </p>
             <p className="text-xl mt-5">
-              fire songs / performances:{" "}
+              favorite songs / performances:{" "}
               <a
                 href="https://www.youtube.com/watch?v=n7kFRxFIPrI"
                 target="_blank"
@@ -181,24 +182,7 @@ export default function Home() {
               >
                 SKY PASS
               </a>
-              ,{" "}
-              <a
-                href="https://www.youtube.com/watch?v=4R4CG2UUNhA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
-              >
-                PUBLIC ENEMIES
-              </a>
-              , and{" "}
-              <a
-                href="https://www.youtube.com/watch?v=_Bp6g2JIZg4"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 text-blue-400 hover:text-blue-300"
-              >
-                Ms. Menhera
-              </a>
+              
               .
             </p>
           </section>
@@ -208,7 +192,7 @@ export default function Home() {
             aria-labelledby="contact-heading"
             className="mt-12 border-t border-white/10 pt-10 scroll-mt-24"
           >
-            <h2 id="contact-heading" className="font-bold text-2xl sm:text-3xl">
+            <h2 id="contact-heading" className="font-semibold text-2xl sm:text-3xl">
               Contact
             </h2>
 

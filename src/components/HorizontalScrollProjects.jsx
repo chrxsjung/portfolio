@@ -19,7 +19,7 @@ export default function HorizontalScrollProjects() {
       />
       <ProjectCard
         image="/images/spotify.jpg"
-        status="working on new features"
+        status="Completed"
         liveUrl="https://spotify-stats-v2-inky.vercel.app/"
         githubUrl="https://github.com/chrxsjung/spotify-stats-v2"
         title="Spotify Stats"
