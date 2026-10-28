@@ -150,7 +150,7 @@ export default function Home() {
             majoring in Computer Science. I'm passionate about full-stack
             development, and constantly trying to build / learn new things to
             improve as a developer. I have multiple internships and projects under my belt and I'm currently looking for a full-time software engineering role starting in{" "}
-            <strong className="font-semibold text-fg">Summer 2027</strong>.
+            <strong className="font-semibold whitespace-nowrap text-fg">Summer 2027</strong>.
           </p>
 
           {/* <p
