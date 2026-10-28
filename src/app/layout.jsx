@@ -1,14 +1,16 @@
 import "./globals.css";
 
-import { Radio_Canada } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "@/lib/site";
+
 export const metadata = {
-  metadataBase: new URL("https://chrxsjung.me"),
-  title: "Chris Jung",
-  description:
-    "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   keywords: [
     "Chris Jung",
     "portfolio",
@@ -35,46 +37,59 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
+  // og/twitter images come from opengraph-image.jsx and twitter-image.jsx
   openGraph: {
-    title: "Chris Jung | Portfolio",
-    description:
-      "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
-    url: "https://chrxsjung.me",
-    siteName: "Chris Jung Portfolio",
-    images: [
-      {
-        url: "https://chrxsjung.me/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Chris Jung Portfolio Preview",
-      },
-    ],
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: "/",
+    siteName: "Chris Jung",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chris Jung | Portfolio",
-    description:
-      "Chris Jung — Aspiring Software Engineer and Computer Science student at the University at Buffalo.",
-    images: ["https://chrxsjung.me/og-image.png"],
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
   },
   alternates: {
-    canonical: "https://chrxsjung.me",
+    canonical: "/",
   },
 };
 
-const radioCanada = Radio_Canada({
+const geistSans = Geist({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  variable: "--font-geist-sans",
 });
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist-mono",
+});
+
+export const viewport = {
+  themeColor: "#ffffff",
+};
+
+// runs before first paint so a saved dark preference never flashes white
+const themeScript = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.classList.add("dark")}catch(e){}`;
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={radioCanada.className}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        {/* browser extensions often inject scripts into head before hydration, which react would flag as a mismatch here */}
+        <script
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: themeScript }}
+        />
+      </head>
+      <body className="bg-bg font-sans text-fg antialiased">
         {children}
         <Analytics />
         <SpeedInsights />

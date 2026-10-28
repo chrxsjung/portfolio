@@ -1,29 +1,40 @@
+import { ArrowUpRight } from "lucide-react";
+
 export default function InternshipCard({
   term,
   role,
   company,
   companyUrl,
-  companyColor = "text-orange-400",
+  companyColor = "text-fg",
   highlights,
 }) {
   return (
-    <article className="w-full rounded-xl border border-white/15 bg-zinc-900/40 p-5 sm:p-6">
-      <p className="text-sm uppercase tracking-wide text-sky-300">{term}</p>
-      <h3 className="mt-2 text-xl sm:text-2xl font-semibold">
-        <span className="text-white">{role} at</span>{" "}
-        <a
-          href={companyUrl}
-          className={`${companyColor} underline`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {company}
-        </a>
-      </h3>
+    <article>
+      <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+        <h3 className="text-lg font-medium tracking-tight text-fg">
+          {role} <span className="font-normal text-subtle">at</span>{" "}
+          <a
+            href={companyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group inline-flex items-baseline gap-0.5 transition-opacity hover:opacity-75 ${companyColor}`}
+          >
+            {company}
+            <ArrowUpRight
+              aria-hidden="true"
+              className="h-3.5 w-3.5 self-center opacity-60 transition-transform group-hover:-translate-y-px group-hover:translate-x-px"
+            />
+          </a>
+        </h3>
+        <p className="shrink-0 font-mono text-xs text-subtle">{term}</p>
+      </div>
 
-      <ul className="mt-4 list-disc space-y-2 pl-6 text-lg text-gray-200">
+      <ul className="mt-4 space-y-2.5 text-[15px] leading-relaxed text-muted">
         {highlights.map((highlight) => (
-          <li key={highlight} className="leading-relaxed">
+          <li
+            key={highlight}
+            className="relative pl-5 before:absolute before:left-0 before:top-[0.8em] before:h-px before:w-2.5 before:bg-line-strong"
+          >
             {highlight}
           </li>
         ))}

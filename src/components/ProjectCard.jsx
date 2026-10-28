@@ -1,4 +1,23 @@
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+
+function ProjectLink({ href, project, children }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group/link inline-flex items-center gap-0.5 text-fg transition-colors hover:text-accent"
+    >
+      {children}
+      <span className="sr-only">, {project}</span>
+      <ArrowUpRight
+        aria-hidden="true"
+        className="h-3.5 w-3.5 text-subtle transition-all group-hover/link:-translate-y-px group-hover/link:translate-x-px group-hover/link:text-accent"
+      />
+    </a>
+  );
+}
 
 export default function ProjectCard({
   title,
@@ -11,74 +30,59 @@ export default function ProjectCard({
   hideGithub = false,
   hideLive = false,
 }) {
-  return (
-    <div className="mb-0 flex h-[544px] min-w-[296px] max-w-[320px] shrink-0 flex-col items-center text-white">
-      <Image
-        src={image}
-        alt={`${title} preview`}
-        width={640}
-        height={360}
-        sizes="(max-width: 768px) 296px, 320px"
-        quality={75}
-        className="mb-6 h-[168px] w-full rounded-xl object-cover aspect-video shadow-lg"
-      />
+  const completed = status === "completed";
 
-      <h3 className="text-center text-2xl font-semibold break-normal whitespace-normal md:text-3xl">
+  return (
+    <article className="group flex h-full flex-col">
+      <div className="relative aspect-[16/10] overflow-hidden rounded-lg border border-line bg-surface">
+        <Image
+          src={image}
+          alt={`${title} preview`}
+          fill
+          sizes="(min-width: 640px) 288px, 80vw"
+          quality={75}
+          className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+        />
+      </div>
+
+      <h3 className="mt-4 text-base font-medium tracking-tight text-fg">
         {title}
       </h3>
 
-      <div className="mt-3 min-h-[24px]">
-        {status && (
-          <div
-            className={`rounded-full px-3 py-0.5 text-[13px] leading-snug ${
-              status === "Completed"
-                ? "bg-green-400 text-green-950"
-                : "bg-yellow-300 text-yellow-950"
+      {status && (
+        <p className="mt-1.5 inline-flex items-center gap-2 font-mono text-xs text-subtle">
+          <span
+            aria-hidden="true"
+            className={`h-1.5 w-1.5 shrink-0 rounded-full ${
+              completed ? "bg-emerald-500" : "bg-amber-500"
             }`}
-          >
-            {status}
-          </div>
-        )}
-      </div>
+          />
+          {status}
+        </p>
+      )}
 
-      <div className="flex min-h-0 w-full flex-1 flex-col items-center">
-        <div className="flex w-full flex-col items-center">
-          <p className="mt-6 text-center text-base break-normal whitespace-pre-line">
-            {description}
-          </p>
-          <div className="mt-4 flex w-full flex-col items-center gap-0">
-            <p className="text-center text-base break-normal whitespace-pre-line text-[#94a3b8]">
-              {techStack}
-            </p>
-            {(!hideLive || !hideGithub) && (
-              <div className="mt-6 flex gap-5 text-sm">
-                {!hideLive && (
-                  <a
-                    href={liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="navbar-link underline"
-                  >
-                    live
-                  </a>
-                )}
-                {!hideGithub && (
-                  <a
-                    href={githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="navbar-link underline"
-                  >
-                    github
-                  </a>
-                )}
-              </div>
-            )}
-          </div>
+      <p className="mt-3 text-[15px] leading-relaxed text-muted">
+        {description}
+      </p>
+
+      <p className="mt-3 font-mono text-xs leading-relaxed text-subtle">
+        {techStack}
+      </p>
+
+      {(!hideLive || !hideGithub) && (
+        <div className="mt-auto flex gap-5 pt-4 text-sm">
+          {!hideLive && (
+            <ProjectLink href={liveUrl} project={title}>
+              live
+            </ProjectLink>
+          )}
+          {!hideGithub && (
+            <ProjectLink href={githubUrl} project={title}>
+              github
+            </ProjectLink>
+          )}
         </div>
-
-        <div className="min-h-0 w-full flex-1" aria-hidden="true" />
-      </div>
-    </div>
+      )}
+    </article>
   );
 }

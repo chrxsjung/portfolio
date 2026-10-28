@@ -1,12 +1,11 @@
-export default function sitemap() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://chrxsjung.me";
-  const now = new Date();
+import { SITE_URL } from "@/lib/site";
 
+export default function sitemap() {
   return [
     {
-      url: `${base}/`,
-      lastModified: now,
-      changeFrequency: "weekly",
+      url: `${SITE_URL}/`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
       priority: 1,
     },
   ];
