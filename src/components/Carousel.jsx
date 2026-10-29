@@ -3,8 +3,6 @@
 import { Children, useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const FADE = "40px";
-
 export default function Carousel({ label, intro, children }) {
   const scrollerRef = useRef(null);
   const [canLeft, setCanLeft] = useState(false);
@@ -41,27 +39,24 @@ export default function Carousel({ label, intro, children }) {
     const el = scrollerRef.current;
     if (!el) return;
     const items = [...el.querySelectorAll(":scope > ul > li")];
+    // on mobile the strip has side padding, so a card's resting position is offset by it
+    const pad = parseFloat(getComputedStyle(el).scrollPaddingLeft) || 0;
     const { scrollLeft } = el;
     const target =
       dir > 0
-        ? items.find((item) => item.offsetLeft > scrollLeft + 4)
-        : items.findLast((item) => item.offsetLeft < scrollLeft - 4);
+        ? items.find((item) => item.offsetLeft - pad > scrollLeft + 4)
+        : items.findLast((item) => item.offsetLeft - pad < scrollLeft - 4);
     // js-driven smooth scrolling ignores the css reduced-motion rule, so check it here
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
     if (target) {
       el.scrollTo({
-        left: target.offsetLeft,
+        left: target.offsetLeft - pad,
         behavior: reduceMotion ? "auto" : "smooth",
       });
     }
   };
-
-  // fade only the edges that hide more cards, so the fade itself signals "keep going"
-  const mask = `linear-gradient(to right, ${
-    canLeft ? `transparent, black ${FADE}` : "black"
-  }, ${canRight ? `black calc(100% - ${FADE}), transparent` : "black"})`;
 
   const arrowClass =
     "inline-flex h-9 w-9 items-center justify-center rounded-md border border-line-strong text-fg transition-colors hover:border-subtle hover:bg-surface disabled:pointer-events-none disabled:opacity-35";
@@ -101,13 +96,15 @@ export default function Carousel({ label, intro, children }) {
         role="region"
         aria-label={label}
         tabIndex={0}
-        style={{ maskImage: mask, WebkitMaskImage: mask }}
-        className="scrollbar-none relative mt-8 snap-x snap-mandatory overflow-x-auto overscroll-x-contain rounded-lg"
+        className="scrollbar-none relative -mx-6 mt-8 snap-x snap-mandatory scroll-pl-12 overflow-x-auto overscroll-x-contain md:mx-0 md:scroll-pl-10 md:rounded-lg"
       >
-        <ul className="flex gap-6">
+        {/* w-max sizes the list to its cards, so the right padding counts toward the scroll width */}
+        <ul className="flex w-max gap-4 px-6 sm:gap-6 md:px-0">
           {Children.map(children, (child) => (
-            // cards narrower than the strip leave the next one peeking in
-            <li className="w-[80%] shrink-0 snap-start sm:w-72">{child}</li>
+            // cards narrower than the screen leave the next one peeking in
+            <li className="w-[calc(100vw-5rem)] shrink-0 snap-start sm:w-72">
+              {child}
+            </li>
           ))}
         </ul>
       </div>

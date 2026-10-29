@@ -39,7 +39,7 @@ export default function ProjectCard({
           src={image}
           alt={`${title} preview`}
           fill
-          sizes="(min-width: 640px) 288px, 80vw"
+          sizes="(min-width: 640px) 288px, calc(100vw - 5rem)"
           quality={75}
           className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
         />
